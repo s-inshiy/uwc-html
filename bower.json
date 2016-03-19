@@ -1,0 +1,24 @@
+{
+  "name": "uwb-html",
+  "version": "1.0.0",
+  "authors": [
+    ""
+  ],
+  "description": "Saas, Gulp",
+  "keywords": [
+    "Saas",
+    "Gulp"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": ">= 2.1.0",
+    "foundation-sites": "~6.0.0",
+    "slick-carousel": "~1.5.9"
+  }
+}
