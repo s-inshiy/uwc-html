@@ -48,13 +48,13 @@ $text : #787878;
 }
 
 .b-about__image {
-	//margin-left: 4px;
+	margin-left: 10px;
 	max-width: 678px;
 	width: 100%;
 }
 
 .l-about__title {
-	margin-left: 28px;
+	margin-left: 34px;
 	margin-top: 36px;
 }
 
@@ -71,10 +71,11 @@ $text : #787878;
 	color: $text;
 	font-family: "Aria", sans-serif;
 	font-size: 15px;
-	letter-spacing: 1.6px;
+	letter-spacing: 1.8px;
 	line-height: 1.54;
-	text-align: justify;
+	text-align: left;
 	margin-top: 36px;
+	//margin-left: 8px;
 }
 
 .b-about__link {
@@ -82,7 +83,7 @@ $text : #787878;
 	display: inline-block;
 	font-family: "BaronNeue", serif;
 	font-size: 13px;
-	margin-top: 16px;
+	margin-top: 20px;
 	text-align: left;
 	letter-spacing: 1.8px;
 	transition: all .3s ease;	
@@ -96,6 +97,104 @@ $text : #787878;
 	margin-bottom: 36px;
 }
 
+.l-works {
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.b-work__title {
+	font-size: 38px;
+	color: $title;
+	text-align: center;
+	font-family: "BaronNeue", serif;
+	letter-spacing: 1.8px;
+	margin: 2px 0 34px 20px;
+	// margin-left: 20px;
+
+}
+
+.b-works__tabs{
+	list-style-type: none;
+	margin-left: 48px;
+	li {
+		display: inline-block;
+		padding: 10px;
+		button {
+			font-size: 12px;
+			font-family: "BaronNeue", serif;
+			color: $title;
+			letter-spacing: 1.8px;
+			transition: all .3s ease;
+			&:hover {
+				position: relative;
+				&:before {
+					position: absolute;
+					content: '';
+					width: 100%;
+					bottom: -8px;
+					left: 0;
+					height: 2px;
+					background: $title;
+				}
+			}
+			&:focus {
+				outline: none;
+			}
+			&.active {
+				position: relative;
+				&:before {
+					position: absolute;
+					content: '';
+					width: 100%;
+					bottom: -8px;
+					left: 0;
+					height: 2px;
+					background: $title;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+}
+
+#container .mix{
+	display: none;
+}
+
+.container {
+	//margin-left: -50px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.b-works__img {
+	&:nth-child(1), &:nth-child(4), &:nth-child(7){
+		margin-left: 0px;
+	};
+	&:nth-child(3), &:nth-child(6) ,&:nth-child(8){
+		margin-right: 0;
+	}
+	&:nth-child(4) {
+		margin-top: -110px;
+	}
+	&:nth-child(5) {
+		margin-top: -132px;
+	}
+	&:nth-child(6) {
+		margin-top: 24px;
+	}
+	&:nth-child(7) {
+		margin-top: -364px;
+	}
+	&:nth-child(8) {
+		margin-top: -346px;
+	}
+	vertical-align: top;
+	margin-right: 12px;
+	margin-left: 12px;
+}
 /* ------------------------------------
     Footer Styles
 -------------------------------------*/

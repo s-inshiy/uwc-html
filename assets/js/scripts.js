@@ -1,3 +1,7 @@
 $(document).ready(function() {
-	console.log("Everything is Fine!");
+	$(function(){
+		// Instantiate MixItUp:
+		$('#container').mixItUp();
+	});
 });
+

@@ -11,14 +11,9 @@
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
-    
-    <!-- Foundation 6 -->
-    <link rel="stylesheet" type="text/css" href="bower_components/foundation-sites/dist/foundation.min.css"/>
 
-    <!-- Custom && Media-Screens -->
-    <link rel="stylesheet" href="assets/css/custom.min.css">
-    <link rel="stylesheet" href="assets/css/media-screens.min.css">
-
+    <!-- Custom && Media-Screens && Foundation 6-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,12 +30,13 @@
         <img src="assets/images/logo.png" class="l-header__logo" alt="logo">
         <img src="assets/images/nav.png" class="l-header__nav" alt="nav">
       </header>
+
       <section class="b-about">
         <div class="row collapse l-about__content">
-          <div class="large-7 columns">
+          <div class="large-offset-2 large-11 columns">
             <img src="assets/images/b-about--img.jpg" class="b-about__image" alt="post">
           </div>
-          <div class="large-5 columns">
+          <div class="large-9 end columns">
             <article class="l-about__title">
               <h3 class="b-about__title text-left">About scriptum</h3>
               <p class="b-about__content">
@@ -51,10 +47,41 @@
           </div>
         </div>
       </section>
+
+
+
+
       <section class="b-works">
-      <div class="row l-about__content">
-        <h3 class="b-about__title text-center">Works</h3>
-      </div>
+        <div class="row l-works collapse">
+          <div class="large-24 columns">
+            <h3 class="b-work__title">Works</h3>
+          </div>
+          <div class="row">
+            <div class="large-6 large-centered columns">
+            <ul class="b-works__tabs">
+                <li><button class="filter active" data-filter="all">All</button></li>
+                <li><button class="filter" data-filter=".design">Design</button></li>
+                <li><button class="filter" data-filter=".web">Web</button></li>
+                <li><button class="filter" data-filter=".brand">Brand</button></li>
+                <li><button class="filter" data-filter=".art">Art</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="large-offset-2 large-22  columns">
+              <div id="container" class="container">
+                <img src="assets/images/b-works__img0.jpg" data-myorder="0" class="mix design b-works__img" alt="">
+                <img src="assets/images/b-works__img1.jpg" data-myorder="1" class="mix design b-works__img" alt="">
+                <img src="assets/images/b-works__img2.jpg" data-myorder="2" class="mix web b-works__img" alt="">
+                <img src="assets/images/b-works__img3.jpg" data-myorder="3" class="mix web b-works__img" alt="">
+                <img src="assets/images/b-works__img4.jpg" data-myorder="4" class="mix brand b-works__img" alt="">
+                <img src="assets/images/b-works__img5.jpg" data-myorder="5" class="mix brand b-works__img" alt="">
+                <img src="assets/images/b-works__img6.jpg" data-myorder="6" class="mix art b-works__img" alt="">
+                <img src="assets/images/b-works__img7.jpg" data-myorder="7" class="mix art b-works__img" alt="">            
+              </div>
+            </div>
+          </div>
+        </div>
       </section>  
       <footer class="b-footer">
         <div class="row">
@@ -72,6 +99,10 @@
     <!-- Foundation 6 -->
     <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
     <!-- Slick Slider -->
+    <script type="text/javascript" src="bower_components/mixitup/build/jquery.mixitup.min.js"></script>
+
+    <script type="text/javascript" src="bower_components/matchHeight/dist/jquery.matchHeight-min.js"></script>
+
     <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- Scripts JS -->
     <script src="assets/js/scripts.js"></script>
