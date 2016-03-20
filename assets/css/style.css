@@ -3614,7 +3614,8 @@ table.hover tr:nth-of-type(even):hover {
 .b-header--bgc {
   background-image: url("../images/b-header--bgc.jpg");
   background-repeat: no-repeat;
-  background-size: container;
+  background-size: cover;
+  background-position: center;
   height: 1010px;
   margin-bottom: 35px; }
 
