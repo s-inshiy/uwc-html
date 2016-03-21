@@ -61,7 +61,7 @@ $text : #787878;
 
 .b-about__title {
 	color: $title;
-	font-family: "BaronNeue", sans-serif;
+	font-family: "BaronNeue", sans-sans-serif;
 	font-weight: bold;
 	letter-spacing: 1.8px;
 	font-size: 45px;
@@ -70,7 +70,7 @@ $text : #787878;
 
 .b-about__content {
 	color: $text;
-	font-family: "Aria", sans-serif;
+	font-family: "Aria", sans-sans-serif;
 	font-size: 15px;
 	letter-spacing: 1.8px;
 	line-height: 1.54;
@@ -82,7 +82,7 @@ $text : #787878;
 .b-about__link {
 	color: $title;
 	display: inline-block;
-	font-family: "BaronNeue", serif;
+	font-family: "BaronNeue", sans-serif;
 	font-size: 13px;
 	margin-top: 20px;
 	text-align: left;
@@ -107,7 +107,7 @@ $text : #787878;
 	font-size: 38px;
 	color: $title;
 	text-align: center;
-	font-family: "BaronNeue", serif;
+	font-family: "BaronNeue", sans-serif;
 	letter-spacing: 1.8px;
 	margin: 2px 0 34px 20px;
 	// margin-left: 20px;
@@ -122,7 +122,7 @@ $text : #787878;
 		padding: 10px;
 		button {
 			font-size: 12px;
-			font-family: "BaronNeue", serif;
+			font-family: "BaronNeue", sans-serif;
 			color: $title;
 			letter-spacing: 1.8px;
 			transition: all .3s ease;
@@ -196,6 +196,143 @@ $text : #787878;
 	margin-right: 12px;
 	margin-left: 12px;
 }
+
+/* ------------------------------------
+  Section Development Styles
+------------------------------------- */
+.b-development {
+	background-color: #FFF;	
+	margin-bottom: 36px;
+}
+
+/* ------------------------------------
+  Section Skills Styles
+------------------------------------- */
+.b-skills {
+	background-color: #FFF;	
+	margin-bottom: 36px;
+}
+
+.l-skills {
+	padding-top: 110px;
+	padding-bottom: 74px;
+}
+
+.b-skills__title {
+	font-family: "BaronNeue", sans-serif;
+	font-size: 45px;	
+	color: $title;
+	letter-spacing: 1.8px;
+	text-align: center;
+	margin-top: 12px;
+	margin-left: 10px;
+	margin-bottom: 58px;
+}
+
+.b-skills__line {
+	text-align: left;
+	font-family: "BaronNeue", sans-serif;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-bottom: 22px;
+	color: $title;	
+	letter-spacing: 1.8px;
+
+}
+
+dl {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1270px;
+  position: relative;
+  //padding: 20px;
+
+}
+
+dt {
+  align-self: flex-start;
+  width: 100%;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  //margin-left: 130px;
+}
+
+.text {
+	align-items: center;
+	background-color: transparent;
+	color: #FFF;
+	display: flex;
+	font-family: "BaronNeue", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	height: 36px;
+	justify-content: flex-end;
+	letter-spacing: 1.8px;
+	//margin-right: -4px;
+	margin-top: 2px;
+	position: absolute;
+	width: 50px;
+	z-index: 5;
+}
+
+.percentage {
+	font-size: .8em;
+	line-height: 1;
+	text-transform: uppercase;
+	width: 100%;
+	height: 36px;
+	margin-bottom: 50px;
+	background-color: #f3f3f3;
+	margin-left: 10px;
+	// background: repeating-linear-gradient(
+	// 	to right,
+	// 	#ddd,
+	// 	#ddd 1px,
+	// 	#fff 1px,
+	// 	#fff 5%
+	// 	);
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: #000;
+		width: 50px;
+		margin-bottom: 10px;
+		height: 36px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: background-color .3s ease;
+		cursor: pointer;
+	}
+	&:hover,
+	&:focus {
+		&:after {
+			background-color: $title; 
+		}
+	}
+}
+
+@for $i from 1 through 100 {
+  .percentage-#{$i} {
+    &:after {
+      $value: ($i * 1%);
+      width: $value;
+    }
+    .text-#{$i} {
+    	$value: ($i * 1%);
+    	right: 100% - $value;
+    }
+  }
+
+}
+
 /* ------------------------------------
     Footer Styles
 -------------------------------------*/
