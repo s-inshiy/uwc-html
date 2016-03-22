@@ -260,6 +260,25 @@ $text : #787878;
 .b-skills {
 	background-color: #FFF;	
 	margin-bottom: 36px;
+	&__title {
+		font-family: "BaronNeue", sans-serif;
+		font-size: 45px;	
+		color: $title;
+		letter-spacing: 1.8px;
+		text-align: center;
+		margin-top: 12px;
+		margin-left: 10px;
+		margin-bottom: 58px;
+	}
+	&__line {
+		text-align: left;
+		font-family: "BaronNeue", sans-serif;
+		font-size: 14px;
+		margin-left: 10px;
+		margin-bottom: 22px;
+		color: $title;	
+		letter-spacing: 1.8px;
+	}
 }
 
 .l-skills {
@@ -267,27 +286,27 @@ $text : #787878;
 	padding-bottom: 74px;
 }
 
-.b-skills__title {
-	font-family: "BaronNeue", sans-serif;
-	font-size: 45px;	
-	color: $title;
-	letter-spacing: 1.8px;
-	text-align: center;
-	margin-top: 12px;
-	margin-left: 10px;
-	margin-bottom: 58px;
-}
+// .b-skills__title {
+// 	font-family: "BaronNeue", sans-serif;
+// 	font-size: 45px;	
+// 	color: $title;
+// 	letter-spacing: 1.8px;
+// 	text-align: center;
+// 	margin-top: 12px;
+// 	margin-left: 10px;
+// 	margin-bottom: 58px;
+// }
 
-.b-skills__line {
-	text-align: left;
-	font-family: "BaronNeue", sans-serif;
-	font-size: 14px;
-	margin-left: 10px;
-	margin-bottom: 22px;
-	color: $title;	
-	letter-spacing: 1.8px;
+// .b-skills__line {
+// 	text-align: left;
+// 	font-family: "BaronNeue", sans-serif;
+// 	font-size: 14px;
+// 	margin-left: 10px;
+// 	margin-bottom: 22px;
+// 	color: $title;	
+// 	letter-spacing: 1.8px;
 
-}
+// }
 
 dl {
   display: flex;
@@ -385,9 +404,52 @@ dt {
 /* ------------------------------------
   Section Description Styles
 ------------------------------------- */
+
 .l-description{
 	padding-top: 132px;
 	padding-bottom: 132px;
+	&__content {
+		margin-top: 50px;
+	}
+}
+
+.b-description{
+	&__iphone5s {
+		margin-left: 10px;
+	}
+	&__icon {
+		margin-left: 66px;
+		margin-top: 26px;
+		&--right {
+			margin-left: -4px;
+			//margin-right: 98px;
+		}
+	}
+	&__title {
+		font-size: 14px;
+		color: $title;
+		margin-top: 26px;
+		font-family: "BaronNeue", sans-serif;
+		margin-left: 26px;
+		letter-spacing: 1.8px;
+		margin-bottom: 4px;
+		&--right {
+			text-align: right;
+		}
+	}
+	&__content {
+		font-size: 15px;
+		font-family: "Aria", sans-serif;
+		margin-left: 26px;
+		margin-right: 10px;
+		letter-spacing: 2px;
+		line-height: 1.5;
+		&--right {
+			text-align: right;
+			margin-right: 0;
+			margin-left: 60px;
+		}
+	}
 }
 
 /* ------------------------------------

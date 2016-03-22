@@ -3796,29 +3796,27 @@ table.hover tr:nth-of-type(even):hover {
 .b-skills {
   background-color: #FFF;
   margin-bottom: 36px; }
+  .b-skills__title {
+    font-family: "BaronNeue", sans-serif;
+    font-size: 45px;
+    color: #1a2631;
+    letter-spacing: 1.8px;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-bottom: 58px; }
+  .b-skills__line {
+    text-align: left;
+    font-family: "BaronNeue", sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 22px;
+    color: #1a2631;
+    letter-spacing: 1.8px; }
 
 .l-skills {
   padding-top: 110px;
   padding-bottom: 74px; }
-
-.b-skills__title {
-  font-family: "BaronNeue", sans-serif;
-  font-size: 45px;
-  color: #1a2631;
-  letter-spacing: 1.8px;
-  text-align: center;
-  margin-top: 12px;
-  margin-left: 10px;
-  margin-bottom: 58px; }
-
-.b-skills__line {
-  text-align: left;
-  font-family: "BaronNeue", sans-serif;
-  font-size: 14px;
-  margin-left: 10px;
-  margin-bottom: 22px;
-  color: #1a2631;
-  letter-spacing: 1.8px; }
 
 dl {
   display: -webkit-flex;
@@ -4497,6 +4495,40 @@ dt {
 .l-description {
   padding-top: 132px;
   padding-bottom: 132px; }
+  .l-description__content {
+    margin-top: 50px; }
+
+.b-description__iphone5s {
+  margin-left: 10px; }
+
+.b-description__icon {
+  margin-left: 66px;
+  margin-top: 26px; }
+  .b-description__icon--right {
+    margin-left: -4px; }
+
+.b-description__title {
+  font-size: 14px;
+  color: #1a2631;
+  margin-top: 26px;
+  font-family: "BaronNeue", sans-serif;
+  margin-left: 26px;
+  letter-spacing: 1.8px;
+  margin-bottom: 4px; }
+  .b-description__title--right {
+    text-align: right; }
+
+.b-description__content {
+  font-size: 15px;
+  font-family: "Aria", sans-serif;
+  margin-left: 26px;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  line-height: 1.5; }
+  .b-description__content--right {
+    text-align: right;
+    margin-right: 0;
+    margin-left: 60px; }
 
 /* ------------------------------------
     Footer Styles
