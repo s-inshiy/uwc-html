@@ -20,7 +20,7 @@
     "jquery": ">= 2.1.0",
     "foundation-sites": "~6.0.0",
     "slick-carousel": "~1.5.9",
-    "jquery-match-height": "https://github.com/liabru/jquery-match-height",
-    "mixitup": "https://github.com/patrickkunka/mixitup"
+    "mixitup": "https://github.com/patrickkunka/mixitup.git#^2.1.11",
+    "masonry": "^4.0.0"
   }
 }
