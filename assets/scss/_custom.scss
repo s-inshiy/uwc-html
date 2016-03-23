@@ -70,7 +70,7 @@ $text : #787878;
 
 .b-about__content {
 	color: $text;
-	font-family: "Aria", sans-sans-serif;
+	font-family: "Aria", sans-serif;
 	font-size: 15px;
 	letter-spacing: 1.8px;
 	line-height: 1.54;
@@ -95,21 +95,21 @@ $text : #787878;
 ------------------------------------- */
 .b-works {
 	background-color: #FFF;	
-	margin-bottom: 36px;
+	margin-bottom: 50px;
 	&__title {
 		font-size: 38px;
 		color: $title;
 		text-align: center;
 		font-family: "BaronNeue", sans-serif;
 		letter-spacing: 1.8px;
-		margin: 2px 0 34px 20px;
+		margin: 0px 0 24px 20px;
 	// margin-left: 20px;
 	}
 }
 
 .l-works {
-	padding-top: 110px;
-	padding-bottom: 110px;
+	padding-top: 120px;
+	padding-bottom: 100px;
 }
 
 // .b-work__title {
@@ -578,6 +578,75 @@ dt {
 		background-image: url(../images/b-quote__img0.jpg);
 		background-position: right;
 		background-repeat: no-repeat;
+	}
+	&__content {
+		font-family: "Aria", sans-serif;
+		font-size: 21px;
+		text-align: center;
+		letter-spacing: 1.8px;
+		font-weight: bold;
+		color: $title;
+		padding-top: 100px;
+		margin-right: 4px;
+		margin-left: 4px;
+		position: relative;
+		line-height: 1.8;
+		&:before {
+			content: '';
+			background-image: url(../images/b-quote__icon0.png);
+			background-repeat: no-repeat;
+			height: 18px;
+			position: absolute;
+			width: 100%;
+			left: 46%;
+			top: 0;
+		}
+	}
+}
+
+#js-slider {
+	.slick-dots {
+		margin: 40px 0 0 -10px;
+		bottom: -95px;
+		li {
+			width: 2px;
+			height: 2px;
+			margin: 0 20px;
+			button {
+				background-color: #dddddd;
+				width: 2px;
+				height: 2px;
+				padding: 4px;
+				&:before {
+					content: '';
+				}
+			}
+		} 
+		li.slick-active {
+			button {
+				background-color: #000;
+				width: 2px;
+				height: 2px;
+			}
+		}
+	}
+	margin-top: 224px;
+}
+
+/* ------------------------------------
+    Section Contact Styles
+-------------------------------------*/
+
+.b-contact {
+	background-color: #fff;
+	padding-top: 120px;
+	&__title {
+		font-family: "BaronNeue", sans-serif;
+		font-size: 45px;	
+		color: $title;
+		letter-spacing: 1.8px;
+		text-align: center;
+		margin-left: 12px;
 	}
 }
 
