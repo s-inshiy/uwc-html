@@ -3648,7 +3648,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .b-about__title {
   color: #1a2631;
-  font-family: "BaronNeue", sans-sans-serif;
+  font-family: "BaronNeue", sans-serif;
   font-weight: bold;
   letter-spacing: 1.8px;
   font-size: 45px;
@@ -3656,7 +3656,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .b-about__content {
   color: #787878;
-  font-family: "Aria", sans-sans-serif;
+  font-family: "Aria", sans-serif;
   font-size: 15px;
   letter-spacing: 1.8px;
   line-height: 1.54;
@@ -3678,18 +3678,18 @@ table.hover tr:nth-of-type(even):hover {
 ------------------------------------- */
 .b-works {
   background-color: #FFF;
-  margin-bottom: 36px; }
+  margin-bottom: 50px; }
   .b-works__title {
     font-size: 38px;
     color: #1a2631;
     text-align: center;
     font-family: "BaronNeue", sans-serif;
     letter-spacing: 1.8px;
-    margin: 2px 0 34px 20px; }
+    margin: 0px 0 24px 20px; }
 
 .l-works {
-  padding-top: 110px;
-  padding-bottom: 110px; }
+  padding-top: 120px;
+  padding-bottom: 100px; }
 
 .b-works__tabs {
   list-style-type: none;
@@ -4494,7 +4494,7 @@ dt {
 ------------------------------------- */
 .l-description {
   padding-top: 132px;
-  padding-bottom: 132px; }
+  padding-bottom: 168px; }
   .l-description__content {
     margin-top: 50px; }
 
@@ -4529,6 +4529,134 @@ dt {
     text-align: right;
     margin-right: 0;
     margin-left: 60px; }
+
+/* ------------------------------------
+    Section News Styles
+-------------------------------------*/
+.b-news {
+  background: #fff;
+  padding-top: 96px;
+  padding-bottom: 128px;
+  margin-bottom: 34px; }
+  .b-news img {
+    margin-bottom: 16px; }
+  .b-news__title {
+    font-family: "BaronNeue", sans-serif;
+    font-size: 45px;
+    color: #1a2631;
+    letter-spacing: 1.8px;
+    text-align: center;
+    margin: 28px 0 58px 14px; }
+    .b-news__title--blog {
+      font-size: 14px;
+      text-align: left;
+      margin: 12px 0 0 0; }
+  .b-news__info {
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    color: #6c6c6c;
+    letter-spacing: 1.8px;
+    position: relative;
+    letter-spacing: 1.8px; }
+    .b-news__info:before {
+      content: '';
+      background-repeat: no-repeat;
+      height: 18px;
+      position: absolute;
+      width: 100%;
+      left: -20px;
+      top: 0; }
+    .b-news__info--author {
+      margin-left: 20px; }
+      .b-news__info--author:before {
+        background-image: url(../images/b-news__pencil.png); }
+    .b-news__info--date {
+      margin-left: 54px; }
+      .b-news__info--date:before {
+        background-image: url(../images/b-news__calendar.png); }
+  .b-news__content {
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    color: #6c6c6c;
+    letter-spacing: 1.8px; }
+  .b-news__link {
+    font-family: "BaronNeue", sans-serif;
+    font-size: 13px;
+    color: #6c6c6c;
+    letter-spacing: 1.8px;
+    margin-top: 8px;
+    display: inline-block;
+    margin-top: 14px; }
+
+.l-news--left {
+  padding-left: 10px; }
+
+/* ------------------------------------
+    Section Quote Styles
+-------------------------------------*/
+.b-quote {
+  height: 800px;
+  margin-bottom: 34px; }
+  .b-quote--bgc {
+    background-image: url(../images/b-quote__img0.jpg);
+    background-position: right;
+    background-repeat: no-repeat; }
+  .b-quote__content {
+    font-family: "Aria", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+    color: #1a2631;
+    padding-top: 100px;
+    margin-right: 4px;
+    margin-left: 4px;
+    position: relative;
+    line-height: 1.8; }
+    .b-quote__content:before {
+      content: '';
+      background-image: url(../images/b-quote__icon0.png);
+      background-repeat: no-repeat;
+      height: 18px;
+      position: absolute;
+      width: 100%;
+      left: 46%;
+      top: 0; }
+
+#js-slider {
+  margin-top: 224px; }
+  #js-slider .slick-dots {
+    margin: 40px 0 0 -10px;
+    bottom: -95px; }
+    #js-slider .slick-dots li {
+      width: 2px;
+      height: 2px;
+      margin: 0 20px; }
+      #js-slider .slick-dots li button {
+        background-color: #dddddd;
+        width: 2px;
+        height: 2px;
+        padding: 4px; }
+        #js-slider .slick-dots li button:before {
+          content: ''; }
+    #js-slider .slick-dots li.slick-active button {
+      background-color: #000;
+      width: 2px;
+      height: 2px; }
+
+/* ------------------------------------
+    Section Contact Styles
+-------------------------------------*/
+.b-contact {
+  background-color: #fff;
+  padding-top: 120px; }
+  .b-contact__title {
+    font-family: "BaronNeue", sans-serif;
+    font-size: 45px;
+    color: #1a2631;
+    letter-spacing: 1.8px;
+    text-align: center;
+    margin-left: 12px; }
 
 /* ------------------------------------
     Footer Styles
