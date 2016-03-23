@@ -4595,7 +4595,8 @@ dt {
     Section Quote Styles
 -------------------------------------*/
 .b-quote {
-  height: 800px; }
+  height: 800px;
+  margin-bottom: 34px; }
   .b-quote--bgc {
     background-image: url(../images/b-quote__img0.jpg);
     background-position: right;
