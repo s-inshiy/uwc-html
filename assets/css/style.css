@@ -1961,14 +1961,14 @@ textarea {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 2.4375rem;
+  height: 2.3125rem;
   padding: 0.5rem;
-  border: 1px solid #cacaca;
+  border: 1px solid #efefef;
   margin: 0 0 1rem;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #0a0a0a;
-  background-color: #fefefe;
+  background-color: #efefef;
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   border-radius: 0;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
@@ -2068,7 +2068,7 @@ label {
 
 .input-group-field {
   border-radius: 0;
-  height: 2.5rem; }
+  height: 2.375rem; }
 
 .input-group-button {
   height: 100%;
@@ -2100,12 +2100,12 @@ legend {
     margin-left: -0.1875rem; }
 
 select {
-  height: 2.4375rem;
+  height: 2.3125rem;
   padding: 0.5rem;
-  border: 1px solid #cacaca;
+  border: 1px solid #efefef;
   border-radius: 0;
   margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-family: inherit;
   line-height: normal;
   color: #0a0a0a;
@@ -3598,7 +3598,7 @@ table.hover tr:nth-of-type(even):hover {
   float: right; }
 
 /*------------------------------------
-    Colors Styles
+    Colors && Fonts Styles
 ------------------------------------- */
 @font-face {
   font-family: BaronNeue;
@@ -3619,10 +3619,10 @@ table.hover tr:nth-of-type(even):hover {
   height: 1010px;
   margin-bottom: 35px; }
 
-.l-header__logo {
+.l-header--logo {
   margin: 25px 23px; }
 
-.l-header__nav {
+.l-header--nav {
   float: right;
   margin: 25px 23px; }
 
@@ -3632,53 +3632,51 @@ table.hover tr:nth-of-type(even):hover {
 .b-about {
   background-color: #FFF;
   margin-bottom: 36px; }
+  .b-about__image {
+    margin-left: 10px;
+    max-width: 678px;
+    width: 100%; }
+  .b-about__title {
+    color: #1a2631;
+    font-family: "BaronNeue", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    font-size: 45px;
+    margin-top: 0;
+    text-align: left; }
+  .b-about__content {
+    color: #787878;
+    font-family: "Aria", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.8px;
+    line-height: 1.54;
+    text-align: left;
+    margin-top: 36px; }
+  .b-about__link {
+    color: #1a2631;
+    display: inline-block;
+    font-family: "BaronNeue", sans-serif;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: left;
+    letter-spacing: 1.8px;
+    transition: all .3s ease; }
 
-.l-about__content {
+.l-about--content {
   padding-bottom: 133px;
   padding-top: 133px; }
 
-.b-about__image {
-  margin-left: 10px;
-  max-width: 678px;
-  width: 100%; }
-
-.l-about__title {
+.l-about--title {
   margin-left: 34px;
-  margin-top: 36px; }
-
-.b-about__title {
-  color: #1a2631;
-  font-family: "BaronNeue", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1.8px;
-  font-size: 45px;
-  margin-top: 0; }
-
-.b-about__content {
-  color: #787878;
-  font-family: "Aria", sans-serif;
-  font-size: 15px;
-  letter-spacing: 1.8px;
-  line-height: 1.54;
-  text-align: left;
-  margin-top: 36px; }
-
-.b-about__link {
-  color: #1a2631;
-  display: inline-block;
-  font-family: "BaronNeue", sans-serif;
-  font-size: 13px;
-  margin-top: 20px;
-  text-align: left;
-  letter-spacing: 1.8px;
-  transition: all .3s ease; }
+  margin-top: 40px; }
 
 /* ------------------------------------
   Section Works Styles
 ------------------------------------- */
 .b-works {
   background-color: #FFF;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  /* ---- .grid-item ---- */ }
   .b-works__title {
     font-size: 38px;
     color: #1a2631;
@@ -3686,10 +3684,29 @@ table.hover tr:nth-of-type(even):hover {
     font-family: "BaronNeue", sans-serif;
     letter-spacing: 1.8px;
     margin: 0px 0 24px 20px; }
+  .b-works__sizer {
+    width: 33%; }
+  .b-works__img {
+    width: 33%;
+    float: left; }
+    .b-works__img img {
+      display: block;
+      max-width: 100%; }
+  .b-works .grid {
+    margin-top: 10px; }
+  .b-works .grid-sizer,
+  .b-works .grid-item {
+    width: 33.333%; }
+  .b-works .grid-item {
+    float: left; }
+  .b-works .grid-item img {
+    display: block;
+    max-width: 100%;
+    margin: 10px; }
 
 .l-works {
   padding-top: 120px;
-  padding-bottom: 100px; }
+  padding-bottom: 120px; }
 
 .b-works__tabs {
   list-style-type: none;
@@ -3728,31 +3745,9 @@ table.hover tr:nth-of-type(even):hover {
         .b-works__tabs li button.active:focus {
           outline: none; }
 
-#container .mix {
-  display: none; }
-
 .container {
   margin-top: 20px;
   margin-left: 10px; }
-
-.b-works__img {
-  vertical-align: top;
-  margin-right: 12px;
-  margin-left: 12px; }
-  .b-works__img:nth-child(1), .b-works__img:nth-child(4), .b-works__img:nth-child(7) {
-    margin-left: 0px; }
-  .b-works__img:nth-child(3), .b-works__img:nth-child(6), .b-works__img:nth-child(8) {
-    margin-right: 0; }
-  .b-works__img:nth-child(4) {
-    margin-top: -110px; }
-  .b-works__img:nth-child(5) {
-    margin-top: -132px; }
-  .b-works__img:nth-child(6) {
-    margin-top: 24px; }
-  .b-works__img:nth-child(7) {
-    margin-top: -364px; }
-  .b-works__img:nth-child(8) {
-    margin-top: -346px; }
 
 /* ------------------------------------
   Section Development Styles
@@ -4649,21 +4644,83 @@ dt {
 -------------------------------------*/
 .b-contact {
   background-color: #fff;
-  padding-top: 120px; }
+  padding-top: 120px;
+  padding-bottom: 132px;
+  margin-bottom: 24px; }
   .b-contact__title {
     font-family: "BaronNeue", sans-serif;
     font-size: 45px;
     color: #1a2631;
     letter-spacing: 1.8px;
     text-align: center;
-    margin-left: 12px; }
+    margin-left: 12px;
+    margin-bottom: 104px; }
+  .b-contact form {
+    margin-left: 20px; }
+    .b-contact form [type=text], .b-contact form [type=email] {
+      height: 66px;
+      font-family: "BaronNeue", sans-serif;
+      letter-spacing: 1.8px;
+      margin-bottom: 34px;
+      padding: 28px 16px 24px 28px;
+      color: #c0c0c0; }
+    .b-contact form textarea {
+      font-family: "BaronNeue", sans-serif;
+      letter-spacing: 1.8px;
+      height: 368px;
+      padding: 24px 16px 24px 28px;
+      margin-bottom: 26px;
+      color: #c0c0c0; }
+    .b-contact form .button {
+      font-family: "BaronNeue", sans-serif;
+      letter-spacing: 1.8px;
+      font-size: 14px;
+      background-color: transparent;
+      color: #c0c0c0;
+      margin-left: 16px; }
 
 /* ------------------------------------
     Footer Styles
 -------------------------------------*/
-/* ------------------------------------
-    Slick Slider Styles
--------------------------------------*/
+.b-footer {
+  background-color: #fff;
+  padding-top: 46px;
+  padding-bottom: 26px; }
+  .b-footer__social {
+    margin-bottom: 30px;
+    margin-left: 60px; }
+  .b-footer__link {
+    position: relative; }
+    .b-footer__link:before {
+      content: '';
+      background-repeat: no-repeat;
+      height: 18px;
+      position: absolute;
+      width: 18px;
+      left: 0px;
+      top: 0; }
+    .b-footer__link--twitter:before {
+      background-image: url(../images/b-footer__twitter.png);
+      top: 6px; }
+    .b-footer__link--facebook:before {
+      background-image: url(../images/b-footer__facebook.png);
+      top: 6px;
+      left: 32px; }
+    .b-footer__link--behance:before {
+      background-image: url(../images/b-footer__behance.png);
+      top: 6px;
+      left: 64px; }
+  .b-footer__copyright {
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+    margin-left: 60px; }
+  .b-footer__imgUp {
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 42px; }
+
 @media (min-width: 768px) {
   .navbar {
     border: none; }
