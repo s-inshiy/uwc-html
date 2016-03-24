@@ -1,7 +1,7 @@
 /*------------------------------------
-    Colors Styles
+    Colors && Fonts Styles
 ------------------------------------- */
-	
+
 @font-face {
     font-family: BaronNeue;
     src: url("../fonts/Baron Neue Black.otf");
@@ -111,17 +111,6 @@ $text : #787878;
 	padding-top: 120px;
 	padding-bottom: 100px;
 }
-
-// .b-work__title {
-// 	font-size: 38px;
-// 	color: $title;
-// 	text-align: center;
-// 	font-family: "BaronNeue", sans-serif;
-// 	letter-spacing: 1.8px;
-// 	margin: 2px 0 34px 20px;
-// 	// margin-left: 20px;
-
-// }
 
 .b-works__tabs{
 	list-style-type: none;
@@ -252,8 +241,6 @@ $text : #787878;
 	position: relative;
 }
 
-
-
 /* ------------------------------------
   Section Skills Styles
 ------------------------------------- */
@@ -285,28 +272,6 @@ $text : #787878;
 	padding-top: 110px;
 	padding-bottom: 74px;
 }
-
-// .b-skills__title {
-// 	font-family: "BaronNeue", sans-serif;
-// 	font-size: 45px;	
-// 	color: $title;
-// 	letter-spacing: 1.8px;
-// 	text-align: center;
-// 	margin-top: 12px;
-// 	margin-left: 10px;
-// 	margin-bottom: 58px;
-// }
-
-// .b-skills__line {
-// 	text-align: left;
-// 	font-family: "BaronNeue", sans-serif;
-// 	font-size: 14px;
-// 	margin-left: 10px;
-// 	margin-bottom: 22px;
-// 	color: $title;	
-// 	letter-spacing: 1.8px;
-
-// }
 
 dl {
   display: flex;
@@ -523,42 +488,6 @@ dt {
 		display: inline-block;
 		margin-top: 14px;
 	}
-	// &__author {
-	// 	font-family: "Arial", sans-serif;
-	// 	font-size: 13px;
-	// 	color: #6c6c6c;
-	// 	letter-spacing: 1.8px;
-	// 	margin-left: 20px;
-	// 	position: relative;
-	// 	&:before {
-	//  		content: '';
-	//     position: absolute;
-	//     top: 0px;
-	//     left: -20px;
-	//     background-image: url(../images/b-news__pencil.png);
-	//     height: 18px;
-	//     background-repeat: no-repeat;
-	//     width: 100%;
-	// 	}
-	// }
-	// &__date {
-	// 	font-family: "Arial", sans-serif;
-	// 	font-size: 13px;
-	// 	color: #6c6c6c;
-	// 	letter-spacing: 1.8px;
-	// 	margin-left: 54px;
-	// 	position: relative;
-	// 	&:before {
-	// 		content: '';
-	// 		position: absolute;
-	// 		top: 0px;
-	// 		left: -20px;
-	// 		background-image: url(../images/b-news__calendar.png);
-	// 		height: 18px;
-	// 		background-repeat: no-repeat;
-	// 		width: 100%;
-	// 	}
-	// }
 }
 
 .l-news {
@@ -641,6 +570,8 @@ dt {
 .b-contact {
 	background-color: #fff;
 	padding-top: 120px;
+	padding-bottom: 132px;
+	margin-bottom: 24px;
 	&__title {
 		font-family: "BaronNeue", sans-serif;
 		font-size: 45px;	
@@ -648,13 +579,51 @@ dt {
 		letter-spacing: 1.8px;
 		text-align: center;
 		margin-left: 12px;
+		margin-bottom: 104px;
+	}
+	form {
+		margin-left: 20px;
+		[type=text], [type=email] {
+			height: 66px;
+			font-family: "BaronNeue", sans-serif;
+			letter-spacing: 1.8px;
+			margin-bottom: 34px;
+			padding: 28px 16px 24px 28px;
+			color: #c0c0c0;
+		}
+		textarea {
+			font-family: "BaronNeue", sans-serif;
+			letter-spacing: 1.8px;
+			height: 368px;
+			padding: 24px 16px 24px 28px;
+			margin-bottom: 26px;
+			color: #c0c0c0;
+		}
+		.button {
+			font-family: "BaronNeue", sans-serif;
+			letter-spacing: 1.8px;
+			font-size: 14px;
+			background-color: transparent;
+			color: #c0c0c0;
+			margin-left: 16px;
+		}
 	}
 }
 
 /* ------------------------------------
     Footer Styles
 -------------------------------------*/
-
-/* ------------------------------------
-    Slick Slider Styles
--------------------------------------*/
+.b-footer {
+	background-color: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&__copyright {
+		font-family: "Arial", sans-serif;
+		letter-spacing: 1.8px;
+		font-size: 15px;
+	}
+	&__imgUp {
+		float: right;
+		cursor: pointer;
+	}
+}

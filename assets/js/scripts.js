@@ -18,5 +18,19 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1
 	});
+
+
+	jQuery("input,textarea").each(function() {
+		jQuery(this).data('holder',jQuery(this).attr('placeholder'));
+
+		jQuery(this).focusin(function(){
+			jQuery(this).attr('placeholder','');
+		});
+
+		jQuery(this).focusout(function(){
+			jQuery(this).attr('placeholder',jQuery(this).data('holder'));
+		});
+	});
+	
 });
 
