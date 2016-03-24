@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	//mixItUp
-	$(function(){
-		// Instantiate MixItUp:
-		$('#container').mixItUp();
-	});
+	// $(function(){
+	// 	// Instantiate MixItUp:
+	// 	$('#container').mixItUp();
+	// });
 
 	//Slick Carousel
 	$('#js-slider').slick({
@@ -31,6 +31,34 @@ $(document).ready(function() {
 			jQuery(this).attr('placeholder',jQuery(this).data('holder'));
 		});
 	});
-	
+
+	// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+	// var grid = document.querySelector('.grid');
+	// var msnry;
+
+	// imagesLoaded( grid, function() {
+	//   // init Isotope after all images have loaded
+	//   msnry = new Masonry( grid, {
+	//   	itemSelector: '.grid-item',
+	//   	columnWidth: '.grid-sizer',
+	//   	fitWidth: true
+	//   	//percentPosition: true,
+	//   	// originLeft: false,
+	//   	//originTop: false
+	//   });
+	// });
+
+	$('.grid').isotope({
+	  itemSelector: '.grid-item',
+	  percentPosition: true,
+	  masonry: {
+	    // use outer width of grid-sizer for columnWidth
+	    columnWidth: '.grid-sizer'
+	  }
+	})
+
 });
+
+
 
