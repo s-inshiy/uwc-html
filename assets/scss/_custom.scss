@@ -615,15 +615,56 @@ dt {
 -------------------------------------*/
 .b-footer {
 	background-color: #fff;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 46px;
+	padding-bottom: 26px;
+	&__social {
+		margin-bottom: 30px;
+		margin-left: 60px;
+	}
+	&__link{
+		position: relative;
+		&:before {
+			content: '';
+			background-repeat: no-repeat;
+			height: 18px;
+			position: absolute;
+			width: 18px;
+			left: 0px;
+			top: 0;
+		}
+		&--twitter{
+			&:before {
+				background-image: url(../images/b-footer__twitter.png);
+				top: 6px;
+			}
+		}
+		&--facebook{
+			&:before {
+				background-image: url(../images/b-footer__facebook.png);
+				top: 6px;
+				left:32px;
+			}
+		}
+		&--behance{
+			&:before {
+				background-image: url(../images/b-footer__behance.png);
+				top: 6px;
+				left:64px;
+			}
+		}	
+	}
 	&__copyright {
 		font-family: "Arial", sans-serif;
 		letter-spacing: 1.8px;
 		font-size: 15px;
+		margin-left: 60px;
+		//margin-bottom: 10px;
+		//margin-left: 4px;
 	}
 	&__imgUp {
 		float: right;
 		cursor: pointer;
+		margin-top: 10px;
+		margin-right: 42px;
 	}
 }

@@ -4689,15 +4689,42 @@ dt {
 -------------------------------------*/
 .b-footer {
   background-color: #fff;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 46px;
+  padding-bottom: 26px; }
+  .b-footer__social {
+    margin-bottom: 30px;
+    margin-left: 60px; }
+  .b-footer__link {
+    position: relative; }
+    .b-footer__link:before {
+      content: '';
+      background-repeat: no-repeat;
+      height: 18px;
+      position: absolute;
+      width: 18px;
+      left: 0px;
+      top: 0; }
+    .b-footer__link--twitter:before {
+      background-image: url(../images/b-footer__twitter.png);
+      top: 6px; }
+    .b-footer__link--facebook:before {
+      background-image: url(../images/b-footer__facebook.png);
+      top: 6px;
+      left: 32px; }
+    .b-footer__link--behance:before {
+      background-image: url(../images/b-footer__behance.png);
+      top: 6px;
+      left: 64px; }
   .b-footer__copyright {
     font-family: "Arial", sans-serif;
     letter-spacing: 1.8px;
-    font-size: 15px; }
+    font-size: 15px;
+    margin-left: 60px; }
   .b-footer__imgUp {
     float: right;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 42px; }
 
 @media (min-width: 768px) {
   .navbar {
