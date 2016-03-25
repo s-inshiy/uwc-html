@@ -476,6 +476,7 @@ dt {
 	padding-top: 96px;
 	padding-bottom: 128px;
 	margin-bottom: 34px;
+	transition: height .3s ease; 
 	img {
 		margin-bottom: 16px;
 	}
@@ -553,10 +554,11 @@ dt {
 .b-quote {
 	height: 800px;
 	//margin-top: 34px;
+	transition: height .3s ease-in-out;
 	margin-bottom: 34px;
 	&--bgc {
 		background-image: url(../images/b-quote__img0.jpg);
-		background-position: right;
+		background-position: center right;
 		background-repeat: no-repeat;
 	}
 	&__content {
