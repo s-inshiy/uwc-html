@@ -119,6 +119,25 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+
+	.b-skills {
+		&__line {
+			margin-left: 0;
+		}
+		&__title {
+			margin-left: 0;
+		}
+		.progress {
+			margin-left: 0;
+		}
+		&__progressBar {
+			max-width: 1170px;
+		}
+	}
+
 }
 
 //xLarge to xxLarge styles
@@ -271,6 +290,29 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+
+	.b-skills {
+		&__line {
+			margin-left: 0;
+		}
+		&__title {
+			margin: 0 0 48px 0;
+		}
+		.progress {
+			margin-left: 0;
+		}
+		&__progressBar {
+			max-width: 1170px;
+		}
+	}
+
+	.l-skills {
+		padding-top: 80px;
+	}
+
 }
 
 //Large to xLarge Screens
@@ -308,7 +350,7 @@
 		&__title {
 			margin-bottom: 54px;
 			margin-left: 0;
-			font-size: 42px;
+			font-size: 38px;
 		}
 		form {
 			margin-left: 0;
@@ -323,6 +365,7 @@
 		padding-top: 48px;
 		&__title{
 			margin: 28px 0 48px 0px;
+			font-size: 38px;
 			&--blog {
 				margin: 12px 0 0;
 				font-size: 14px;
@@ -477,6 +520,30 @@
 		&--bgc {
 			height: 810px	;
 		}
+	}
+
+	/* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+
+	.b-skills {
+		&__line {
+			margin-left: 0;
+		}
+		&__title {
+			margin: 0 0 48px 0;
+			font-size: 38px;
+		}
+		.progress {
+			margin-left: 0;
+		}
+		&__progressBar {
+			max-width: 1000px;
+		}
+	}
+
+	.l-skills {
+		padding-top: 80px;
 	}
 	
 }
@@ -718,7 +785,7 @@
 		}
 	}	
 
-		/* ------------------------------------
+	/* ------------------------------------
 	    Header Styles
 	-------------------------------------*/
 
@@ -726,6 +793,31 @@
 		&--bgc {
 			height: 810px	;
 		}
+	}
+
+	/* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+
+	.b-skills {
+		&__line {
+			margin-left: 0;
+		}
+		&__title {
+			margin: 0 0 48px 0;
+			font-size: 38px;
+		}
+		.progress {
+			margin-left: 0;
+		}
+		&__progressBar {
+			max-width: 1000px;
+		}
+	}
+
+	.l-skills {
+		padding-top: 40px;
+		padding-bottom: 80px;
 	}
 
 }
@@ -1004,6 +1096,31 @@
 		&--bgc {
 			height: 610px	;
 		}
+	}
+
+	/* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+
+	.b-skills {
+		&__line {
+			margin-left: 0;
+		}
+		&__title {
+			margin: 0 0 48px 0;
+			font-size: 38px;
+		}
+		.progress {
+			margin-left: 0;
+		}
+		&__progressBar {
+			max-width: 1000px;
+		}
+	}
+
+	.l-skills {
+		padding-top: 40px;
+		padding-bottom: 80px;
 	}
 
 }

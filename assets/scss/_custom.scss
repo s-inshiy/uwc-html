@@ -13,6 +13,7 @@ $text : #787878;
 /* ------------------------------------
   Section Header Styles
 ------------------------------------- */
+
 .l-home {
 	background-color: #F3F3F3;
 	padding: 35px;
@@ -20,38 +21,46 @@ $text : #787878;
 
 .b-header {
 	transition: all .3s ease-in-out;
+
 	&--bgc {
 		background-image: url("../images/b-header--bgc.jpg");
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center;
 		height: 1010px;
 		margin-bottom: 35px;
+
 	}
 }
 
 .l-header{
+
 	&--logo {
 		margin: 25px 23px;
 	}
+
 	&--nav {
 		float: right;
 		margin: 25px 23px;
 	}
+
 }
 
 /* ------------------------------------
   Section About Styles
 ------------------------------------- */
+
 .b-about {
 	background-color: #FFF;	
 	margin-bottom: 36px;
 	transition: all .3s ease-in-out;
+
 	&__image {
 		margin-left: 10px;
 		max-width: 678px;
 		width: 100%;
 	}
+
 	&__title {
 		color: $title;
 		font-family: "BaronNeue", sans-serif;
@@ -61,6 +70,7 @@ $text : #787878;
 		margin-top: 0;
 		text-align: left;
 	}
+
 	&__content {
 		color: $text;
 		font-family: "Aria", sans-serif;
@@ -70,6 +80,7 @@ $text : #787878;
 		text-align: left;
 		margin-top: 36px;
   }
+
   &__link {
   	color: $title;
   	display: inline-block;
@@ -80,6 +91,7 @@ $text : #787878;
   	letter-spacing: 1.8px;
   	transition: all .3s ease;	
   }
+
 }
 
 .l-about {
@@ -93,74 +105,85 @@ $text : #787878;
 	}
 }
 
-// .b-about__image {
-// 	margin-left: 10px;
-// 	max-width: 678px;
-// 	width: 100%;
-// }
-
-// .l-about__title {
-// 	margin-left: 34px;
-// 	margin-top: 40px;
-// }
-
-// .b-about__title {
-// 	color: $title;
-// 	font-family: "BaronNeue", sans-serif;
-// 	font-weight: bold;
-// 	letter-spacing: 1.8px;
-// 	font-size: 45px;
-// 	margin-top: 0;
-// }
-
-// .b-about__content {
-// 	color: $text;
-// 	font-family: "Aria", sans-serif;
-// 	font-size: 15px;
-// 	letter-spacing: 1.8px;
-// 	line-height: 1.54;
-// 	text-align: left;
-// 	margin-top: 36px;
-// 	//margin-left: 8px;
-// }
-
-// .b-about__link {
-// 	color: $title;
-// 	display: inline-block;
-// 	font-family: "BaronNeue", sans-serif;
-// 	font-size: 13px;
-// 	margin-top: 20px;
-// 	text-align: left;
-// 	letter-spacing: 1.8px;
-// 	transition: all .3s ease;	
-// }
-
 /* ------------------------------------
   Section Works Styles
 ------------------------------------- */
+
+.l-works {
+	padding-bottom: 120px;
+	padding-top: 120px;
+}
+
 .b-works {
 	background-color: #FFF;	
 	margin-bottom: 50px;
-	transition: all .3s ease;
+	transition: all .3s ease-in-out;
+
 	&__title {
-		font-size: 38px;
 		color: $title;
-		text-align: center;
 		font-family: "BaronNeue", sans-serif;
+		font-size: 38px;
 		letter-spacing: 1.8px;
 		margin: 0px 0 24px 20px;
-	// margin-left: 20px;
+		text-align: center;
 	}
+
 	&__sizer {
 		width: 33%;
 	}
+
 	&__img {
 		width: 33%;
 		float: left;
-		//margin: 10px; 
 		img {
 			display: block;
 			max-width: 100%; 
+		}
+	}
+
+	&__tabs{
+		list-style-type: none;
+		margin-left: 48px;
+		li {
+			display: inline-block;
+			padding: 10px;
+			button {
+				color: $title;
+				font-family: "BaronNeue", sans-serif;
+				font-size: 12px;
+				letter-spacing: 1.8px;
+				transition: all .3s ease;
+				&:hover {
+					position: relative;
+					&:before {
+						background: $title;
+						bottom: -8px;
+						content: '';
+						height: 2px;
+						left: 0;
+						position: absolute;
+						width: 100%;
+					}
+				}
+				&:focus {
+					outline: none;
+				}
+				&.active {
+					position: relative;
+					&:before {
+						background: $title;
+						bottom: -8px;
+						content: '';
+						height: 2px;
+						left: 0;
+						position: absolute;
+						width: 100%;
+					}
+					&:focus {
+						outline: none;
+					}
+				}
+			}
 		}
 	}
 
@@ -187,106 +210,44 @@ $text : #787878;
 
 }
 
-.l-works {
-	padding-top: 120px;
-	padding-bottom: 120px;
-}
-
-.b-works__tabs{
-	list-style-type: none;
-	margin-left: 48px;
-	li {
-		display: inline-block;
-		padding: 10px;
-		button {
-			font-size: 12px;
-			font-family: "BaronNeue", sans-serif;
-			color: $title;
-			letter-spacing: 1.8px;
-			transition: all .3s ease;
-			&:hover {
-				position: relative;
-				&:before {
-					position: absolute;
-					content: '';
-					width: 100%;
-					bottom: -8px;
-					left: 0;
-					height: 2px;
-					background: $title;
-				}
-			}
-			&:focus {
-				outline: none;
-			}
-			&.active {
-				position: relative;
-				&:before {
-					position: absolute;
-					content: '';
-					width: 100%;
-					bottom: -8px;
-					left: 0;
-					height: 2px;
-					background: $title;
-				}
-				&:focus {
-					outline: none;
-				}
-			}
-		}
-	}
-}
-
-// #container .mix{
-// 	display: none;
-// }
-
-.container {
-	//margin-left: -50px;
-	margin-top: 20px;
-	margin-left: 10px;
-}
-
 /* ------------------------------------
   Section Development Styles
 ------------------------------------- */
+
 .b-development {
 	background-color: #FFF;	
 	margin-bottom: 36px;
 	transition: all 0.3s ease-in-out;
 	&--bgc {
 		background-image: url("../images/b-development__img.jpg");
+		background-position: center left;
 		background-repeat: no-repeat;
 		background-size: 925px 800px;
-		background-position: center left;
 		height: 800px;
 	}
 	&__title {
+		color: $title;
 		font-family: "BaronNeue", sans-serif;
 		font-size: 14px;
 		letter-spacing: 1.8px;
-		color: $title;
+		margin-bottom: 76px;
+		margin-right: 16px;
 		margin-top: 18px;
 		text-align: center;
-		margin-right: 16px;
-		margin-bottom: 76px;
-		// margin-left: px;
 	}
 	&__img {
 		height: 76px;
 		margin-right: 16px;
-		// margin-left: px;
 	}
 	&__left {
+		left: -14px;
 		position: absolute;
 		text-align: center;
-		left: -14px;
 	}
 	&__right {
-		text-align: center; 	
 		position: absolute;
 		right: -62px;
+		text-align: center; 	
 	}
 }
 
@@ -298,126 +259,58 @@ $text : #787878;
 /* ------------------------------------
   Section Skills Styles
 ------------------------------------- */
+
 .b-skills {
 	background-color: #FFF;	
 	margin-bottom: 36px;
+	transition: all .3s ease-in-out;
 	&__title {
+		color: $title;
 		font-family: "BaronNeue", sans-serif;
 		font-size: 45px;	
-		color: $title;
 		letter-spacing: 1.8px;
-		text-align: center;
-		margin-top: 12px;
+		margin-bottom: 64px;
 		margin-left: 10px;
-		margin-bottom: 72px;
+		margin-top: 12px;
+		text-align: center;
 	}
+
 	&__line {
-		text-align: left;
+		color: $title;	
 		font-family: "BaronNeue", sans-serif;
 		font-size: 14px;
-		margin-left: 10px;
-		margin-bottom: 22px;
-		color: $title;	
 		letter-spacing: 1.8px;
+		margin-bottom: 24px;
+		margin-left: 10px;
+		text-align: left;
 	}
+
+	&__progressBar {
+	  background-color: white;
+	  max-width: 1270px;
+	  transition: all .3s ease-in-out;
+	  width: 100%;
+		.progress {
+			margin-left: 10px;
+			.progress-meter {
+				color: #FFF;
+				.value {
+					display: inline-block;
+					float: right;
+					font-family: "BaronNeue", sans-serif;
+					font-size: 14px;
+					font-weight: 600;
+					margin: 8px 16px 0 0;
+				}
+			}
+		}
+	}
+
 }
 
 .l-skills {
 	padding-top: 96px;
-	padding-bottom: 74px;
-}
-
-dl {
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1270px;
-  position: relative;
-  //padding: 20px;
-
-}
-
-dt {
-  align-self: flex-start;
-  width: 100%;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: 20px;
-  //margin-left: 130px;
-}
-
-.text {
-	align-items: center;
-	background-color: transparent;
-	color: #FFF;
-	display: flex;
-	font-family: "BaronNeue", sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	height: 36px;
-	justify-content: flex-end;
-	letter-spacing: 1.8px;
-	//margin-right: -4px;
-	margin-top: 2px;
-	position: absolute;
-	width: 50px;
-	z-index: 5;
-}
-
-.percentage {
-	font-size: .8em;
-	line-height: 1;
-	text-transform: uppercase;
-	width: 100%;
-	height: 36px;
-	margin-bottom: 50px;
-	background-color: #f3f3f3;
-	margin-left: 10px;
-	// background: repeating-linear-gradient(
-	// 	to right,
-	// 	#ddd,
-	// 	#ddd 1px,
-	// 	#fff 1px,
-	// 	#fff 5%
-	// 	);
-
-	&:after {
-		content: "";
-		display: block;
-		background-color: #000;
-		width: 50px;
-		margin-bottom: 10px;
-		height: 36px;
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		transition: background-color .3s ease;
-		cursor: pointer;
-	}
-	&:hover,
-	&:focus {
-		&:after {
-			background-color: $title; 
-		}
-	}
-}
-
-@for $i from 1 through 100 {
-  .percentage-#{$i} {
-    &:after {
-      $value: ($i * 1%);
-      width: $value;
-    }
-    .text-#{$i} {
-    	$value: ($i * 1%);
-    	right: 100% - $value;
-    }
-  }
-
+	padding-bottom: 92px;
 }
 
 /* ------------------------------------
@@ -557,14 +450,15 @@ dt {
 
 .b-quote {
 	height: 800px;
-	//margin-top: 34px;
 	transition: all .3s ease-in-out;
 	margin-bottom: 34px;
+
 	&--bgc {
 		background-image: url(../images/b-quote__img0.jpg);
 		background-position: center right;
 		background-repeat: no-repeat;
 	}
+
 	&__content {
 		font-family: "Aria", sans-serif;
 		font-size: 21px;
@@ -625,75 +519,85 @@ dt {
 
 .b-contact {
 	background-color: #fff;
-	padding-top: 110px;
-	padding-bottom: 132px;
 	margin-bottom: 24px;
+	padding-bottom: 132px;
+	padding-top: 110px;
+
 	&__title {
+		color: $title;
 		font-family: "BaronNeue", sans-serif;
 		font-size: 45px;	
-		color: $title;
 		letter-spacing: 1.8px;
-		text-align: center;
-		margin-left: 12px;
 		margin-bottom: 114px;
+		margin-left: 12px;
+		text-align: center;
 	}
+
 	form {
 		margin-left: 20px;
 		[type=text], [type=email] {
-			height: 66px;
+			color: #c0c0c0;
 			font-family: "BaronNeue", sans-serif;
+			height: 66px;
 			letter-spacing: 1.8px;
 			margin-bottom: 34px;
 			padding: 28px 16px 24px 28px;
-			color: #c0c0c0;
 		}
+
 		textarea {
-			font-family: "BaronNeue", sans-serif;
-			letter-spacing: 1.8px;
-			height: 368px;
-			padding: 24px 16px 24px 28px;
-			margin-bottom: 26px;
 			color: #c0c0c0;
-		}
-		.button {
 			font-family: "BaronNeue", sans-serif;
+			height: 368px;
 			letter-spacing: 1.8px;
-			font-size: 14px;
+			margin-bottom: 26px;
+			padding: 24px 16px 24px 28px;
+		}
+
+		.button {
 			background-color: transparent;
 			color: #c0c0c0;
+			font-family: "BaronNeue", sans-serif;
+			font-size: 14px;
+			letter-spacing: 1.8px;
 			margin-left: 16px;
 		}
+
 	}
 }
 
 /* ------------------------------------
     Footer Styles
 -------------------------------------*/
+
 .b-footer {
 	background-color: #fff;
-	padding-top: 46px;
 	padding-bottom: 26px;
+	padding-top: 46px;
+
 	&__social {
 		margin-bottom: 30px;
 		margin-left: 60px;
 	}
+
 	&__link{
 		position: relative;
 		&:before {
-			content: '';
 			background-repeat: no-repeat;
+			content: '';
 			height: 18px;
-			position: absolute;
-			width: 18px;
 			left: 0px;
+			position: absolute;
 			top: 0;
+			width: 18px;
 		}
+
 		&--twitter{
 			&:before {
 				background-image: url(../images/b-footer__twitter.png);
 				top: 6px;
 			}
 		}
+
 		&--facebook{
 			&:before {
 				background-image: url(../images/b-footer__facebook.png);
@@ -701,6 +605,7 @@ dt {
 				left:32px;
 			}
 		}
+
 		&--behance{
 			&:before {
 				background-image: url(../images/b-footer__behance.png);
@@ -708,19 +613,21 @@ dt {
 				left:64px;
 			}
 		}	
+
 	}
+
 	&__copyright {
 		font-family: "Arial", sans-serif;
-		letter-spacing: 1.8px;
 		font-size: 15px;
+		letter-spacing: 1.8px;
 		margin-left: 60px;
-		//margin-bottom: 10px;
-		//margin-left: 4px;
 	}
+
 	&__imgUp {
 		float: right;
 		cursor: pointer;
 		margin-top: 10px;
 		margin-right: 42px;
 	}
+
 }

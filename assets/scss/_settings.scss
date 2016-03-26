@@ -424,10 +424,10 @@ $pagination-arrows: true;
 // 26. Progress Bar
 // ----------------
 
-$progress-height: 1rem;
-$progress-background: $medium-gray;
-$progress-margin-bottom: $global-margin;
-$progress-meter-background: $primary-color;
+$progress-height: 36px;
+$progress-background: #f3f3f3;
+$progress-margin-bottom: 50px;
+$progress-meter-background: #000;
 $progress-radius: $global-radius;
 
 // 27. Reveal
