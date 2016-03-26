@@ -39,6 +39,18 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+
+	.b-description {
+		&__content{
+			&--right {
+				margin-left: 10px;	
+			} 
+		}
+	} 
+
 }
 
 //xLarge to xxLarge styles
@@ -96,6 +108,29 @@
 			}
 		}
 	}
+
+
+	/* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+
+	.b-description {
+		&__iphone5s{
+			margin-left: 0;
+			margin-top: 20px;
+		}
+		&__icon {
+			margin-left: 44px;
+			&--right {
+				margin-left: 0;
+			}
+		}
+		&__content{
+			&--right {
+				margin-left: 10px;	
+			} 
+		}
+	} 
 	
 }
 
@@ -155,6 +190,33 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+
+	.b-description {
+		&__iphone5s{
+			margin-left: 0;
+			margin-top: 38px;
+		}
+		&__icon {
+			margin-left: 0px;
+			&--right {
+				margin-left: 0;
+			}
+		}
+		&__content{
+			margin-left: 0;
+			&--right {
+				margin-left: 0;	
+			} 
+		}
+	} 
+
+	.l-description {
+	    padding-top: 80px;
+	    padding-bottom: 100px;
+	}
 
 }
 
@@ -234,9 +296,9 @@
 		}
 		&__title{
 			margin: 28px 0 58px 0px;
-			font-size: 38px
+			font-size: 38px;
 			&--blog {
-				margin: 12px 0 0;
+				margin: 12px 0 ;
 				font-size: 14px;
 			}
 		}
@@ -244,6 +306,40 @@
 			margin-top: 0;
 		}
 	}
+
+	/* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+
+	.b-description {
+		&__iphone5s{
+			margin: 38px auto 0;
+			display: block;
+		}
+		&__icon {
+			margin-left: 36px;
+			&--right {
+				margin-left: 0;
+				margin-right: 36px;
+			}
+		}
+		&__content{
+			font-size: 14px;
+			margin-left: 0;
+			&--right {
+				margin-left: 0;	
+			} 
+		}
+		&__title {
+			margin-left: 0;
+		}
+	} 
+
+	.l-description {
+	    padding-top: 70px;
+	    padding-bottom: 100px;
+	}
+
 
 }
 
@@ -354,7 +450,7 @@
 			text-align: center;
 			font-size: 36px;
 			&--blog {
-				margin: 12px 0 4px;
+				margin: 12px 0 6px;
 				font-size: 14px;
 			}
 		}
@@ -364,5 +460,38 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+
+	.b-description {
+		&__iphone5s{
+			margin: 38px auto 0;
+			display: block;
+		}
+		&__title {
+			margin-left: 0;
+		}
+		&__icon {
+			margin-left: 16px;
+			&--right {
+				margin-left: 0;
+				float: right;
+				margin-right: 16px;
+			}
+		}
+		&__content{
+			margin-left: 0;
+			font-size: 13px;
+			&--right {
+				margin-left: 0;	
+			} 
+		}
+	} 
+
+	.l-description {
+	    padding-top: 40px;
+	    padding-bottom: 100px;
+	}
 }
 

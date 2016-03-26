@@ -5874,7 +5874,12 @@ dt {
     .b-news__title {
       margin: 28px 0 48px 0px; }
       .b-news__title--blog {
-        margin: 12px 0 0; } }
+        margin: 12px 0 0; }
+  /* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+  .b-description__content--right {
+    margin-left: 10px; } }
 
 @media screen and (min-width: 75em) and (max-width: 89.9375em) {
   /* ------------------------------------
@@ -5912,7 +5917,19 @@ dt {
       font-size: 42px; }
       .b-news__title--blog {
         margin: 12px 0 0;
-        font-size: 14px; } }
+        font-size: 14px; }
+  /* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+  .b-description__iphone5s {
+    margin-left: 0;
+    margin-top: 20px; }
+  .b-description__icon {
+    margin-left: 44px; }
+    .b-description__icon--right {
+      margin-left: 0; }
+  .b-description__content--right {
+    margin-left: 10px; } }
 
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
   /* ------------------------------------
@@ -5952,7 +5969,24 @@ dt {
       margin: 28px 0 48px 0px; }
       .b-news__title--blog {
         margin: 12px 0 0;
-        font-size: 14px; } }
+        font-size: 14px; }
+  /* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+  .b-description__iphone5s {
+    margin-left: 0;
+    margin-top: 38px; }
+  .b-description__icon {
+    margin-left: 0px; }
+    .b-description__icon--right {
+      margin-left: 0; }
+  .b-description__content {
+    margin-left: 0; }
+    .b-description__content--right {
+      margin-left: 0; }
+  .l-description {
+    padding-top: 80px;
+    padding-bottom: 100px; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .l-home {
@@ -6007,11 +6041,33 @@ dt {
       padding: 0 10px 0 0; }
     .b-news__title {
       margin: 28px 0 58px 0px;
-      font-size: 38px .b-news__title --blog;
-        font-size-margin: 12px 0 0;
-        font-size-font-size: 14px; }
+      font-size: 38px; }
+      .b-news__title--blog {
+        margin: 12px 0;
+        font-size: 14px; }
     .b-news__link {
-      margin-top: 0; } }
+      margin-top: 0; }
+  /* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+  .b-description__iphone5s {
+    margin: 38px auto 0;
+    display: block; }
+  .b-description__icon {
+    margin-left: 36px; }
+    .b-description__icon--right {
+      margin-left: 0;
+      margin-right: 36px; }
+  .b-description__content {
+    font-size: 14px;
+    margin-left: 0; }
+    .b-description__content--right {
+      margin-left: 0; }
+  .b-description__title {
+    margin-left: 0; }
+  .l-description {
+    padding-top: 70px;
+    padding-bottom: 100px; } }
 
 @media screen and (max-width: 39.9375em) {
   /* ------------------------------------
@@ -6084,8 +6140,30 @@ dt {
       text-align: center;
       font-size: 36px; }
       .b-news__title--blog {
-        margin: 12px 0 4px;
+        margin: 12px 0 6px;
         font-size: 14px; }
     .b-news__link {
       margin-bottom: 34px;
-      margin-top: 0; } }
+      margin-top: 0; }
+  /* ------------------------------------
+	    Section Description Styles
+	-------------------------------------*/
+  .b-description__iphone5s {
+    margin: 38px auto 0;
+    display: block; }
+  .b-description__title {
+    margin-left: 0; }
+  .b-description__icon {
+    margin-left: 16px; }
+    .b-description__icon--right {
+      margin-left: 0;
+      float: right;
+      margin-right: 16px; }
+  .b-description__content {
+    margin-left: 0;
+    font-size: 13px; }
+    .b-description__content--right {
+      margin-left: 0; }
+  .l-description {
+    padding-top: 40px;
+    padding-bottom: 100px; } }
