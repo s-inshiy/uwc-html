@@ -139,6 +139,7 @@ $text : #787878;
 .b-works {
 	background-color: #FFF;	
 	margin-bottom: 50px;
+	transition: all .3s ease;
 	&__title {
 		font-size: 38px;
 		color: $title;

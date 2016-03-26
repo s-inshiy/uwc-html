@@ -75,6 +75,40 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section Works Styles
+	-------------------------------------*/
+
+	.l-works {
+		padding-top: 100px;
+	}	
+
+	.b-works {
+		&__tabs {
+			margin-left: 0;
+			text-align: center;
+		}
+
+		.grid {
+			margin-top: 0px;
+		}
+
+		.grid-item img {
+			display: block;
+			max-width: 98%;
+			margin: 4px;
+		}
+
+		.grid-sizer,
+		.grid-item {
+			width: 33.333%;
+		}
+
+		.grid-item {
+			float: left;
+		}
+	}
+
 }
 
 //xLarge to xxLarge styles
@@ -179,6 +213,30 @@
 		}
 		&__title {
 			margin-bottom: 54px;
+		}
+	}
+
+	/* ------------------------------------
+	    Section Works Styles
+	-------------------------------------*/
+		
+	.l-works {
+		padding-top: 80px;
+	}	
+
+	.b-works {
+		&__tabs {
+			margin-left: 0;
+			text-align: center;
+		}
+		.grid {
+			margin-top: 0px;
+		}
+
+		.grid-item img {
+			display: block;
+			max-width: 98%;
+			margin: 4px;
 		}
 	}
 
@@ -326,7 +384,32 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section Works Styles
+	-------------------------------------*/	
+	
+	.l-works {
+		padding-top: 80px;
+	}	
+	
+	.b-works {
+		&__tabs {
+			margin-left: 0;
+			text-align: center;	
+		}
 
+		.grid {
+			margin-top: 0px;
+		}
+
+		.grid-item img {
+			display: block;
+			max-width: 98%;
+			margin: 4px;
+		}
+
+	}	
+	
 }
 
 //Medium to Large Screens
@@ -494,6 +577,39 @@
 
 	.l-skills{ 
 		margin-top: 540px;
+	}
+
+	/* ------------------------------------
+	    Section Works Styles
+	-------------------------------------*/
+		
+	.l-works {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}	
+
+	.b-works {
+		&__tabs {
+			margin-left: 0;
+			text-align: center;
+		}
+		.grid {
+			margin-top: 0px;
+			margin-left: 2%;
+		}
+		
+		.grid-sizer {
+			width: 49%;
+		}
+
+		.grid-item{
+			width: 49%;	
+			img {
+				display: block;
+				max-width: 98%;
+				margin: 4px auto;
+			}
+		} 
 	}
 
 }
@@ -692,6 +808,39 @@
 
 	.l-skills{ 
 		margin-top: 540px;
+	}
+
+	/* ------------------------------------
+	    Section Works Styles
+	-------------------------------------*/
+		
+	.l-works {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}	
+
+	.b-works {
+		&__tabs {
+			margin-left: 0;
+			text-align: center;
+		}
+		.grid {
+			margin-top: 0px;
+			margin-left: 2%;
+		}
+		
+		.grid-sizer {
+			width: 98%;
+		}
+
+		.grid-item{
+			width: 98%;	
+			img {
+				display: block;
+				max-width: 98%;
+				margin: 4px auto;
+			}
+		} 
 	}
 
 }
