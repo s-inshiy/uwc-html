@@ -19,6 +19,7 @@ $text : #787878;
 }
 
 .b-header {
+	transition: all .3s ease-in-out;
 	&--bgc {
 		background-image: url("../images/b-header--bgc.jpg");
 		background-repeat: no-repeat;
@@ -45,6 +46,7 @@ $text : #787878;
 .b-about {
 	background-color: #FFF;	
 	margin-bottom: 36px;
+	transition: all .3s ease-in-out;
 	&__image {
 		margin-left: 10px;
 		max-width: 678px;

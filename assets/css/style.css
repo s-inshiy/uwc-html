@@ -4739,13 +4739,15 @@ table.hover tr:nth-of-type(even):hover {
   background-color: #F3F3F3;
   padding: 35px; }
 
-.b-header--bgc {
-  background-image: url("../images/b-header--bgc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 1010px;
-  margin-bottom: 35px; }
+.b-header {
+  transition: all .3s ease-in-out; }
+  .b-header--bgc {
+    background-image: url("../images/b-header--bgc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1010px;
+    margin-bottom: 35px; }
 
 .l-header--logo {
   margin: 25px 23px; }
@@ -4759,7 +4761,8 @@ table.hover tr:nth-of-type(even):hover {
 ------------------------------------- */
 .b-about {
   background-color: #FFF;
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  transition: all .3s ease-in-out; }
   .b-about__image {
     margin-left: 10px;
     max-width: 678px;
@@ -5915,7 +5918,12 @@ dt {
   .b-works .grid-item {
     width: 33.333%; }
   .b-works .grid-item {
-    float: left; } }
+    float: left; }
+  /* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+  .l-about--title {
+    margin-top: 20px; } }
 
 @media screen and (min-width: 75em) and (max-width: 89.9375em) {
   /* ------------------------------------
@@ -5996,7 +6004,18 @@ dt {
   .b-works .grid-item img {
     display: block;
     max-width: 98%;
-    margin: 4px; } }
+    margin: 4px; }
+  /* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+  .l-about--title {
+    margin-top: 0;
+    margin-left: 30px; }
+  /* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+  .b-header--bgc {
+    height: 810px; } }
 
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
   /* ------------------------------------
@@ -6103,7 +6122,28 @@ dt {
   .b-works .grid-item img {
     display: block;
     max-width: 98%;
-    margin: 4px; } }
+    margin: 4px; }
+  /* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+  .l-about--title {
+    margin-top: 0;
+    margin-left: 30px; }
+  .b-about__title {
+    font-size: 38px; }
+  .b-about__content {
+    font-size: 14px;
+    margin-top: 20px; }
+  .b-about__link {
+    font-size: 13px;
+    margin-top: 6px; }
+  .b-about__image {
+    min-height: 340px; }
+  /* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+  .b-header--bgc {
+    height: 810px; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .l-home {
@@ -6234,7 +6274,36 @@ dt {
     .b-works .grid-item img {
       display: block;
       max-width: 98%;
-      margin: 4px auto; } }
+      margin: 4px auto; }
+  /* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+  .l-about--title {
+    margin-top: 0;
+    margin: 6px; }
+  .l-about--content {
+    padding-top: 40px;
+    padding-bottom: 80px; }
+  .b-about__title {
+    font-size: 38px;
+    text-align: center;
+    margin-top: 14px; }
+  .b-about__content {
+    font-size: 14px;
+    margin-top: 20px; }
+  .b-about__link {
+    font-size: 13px;
+    margin-top: 6px; }
+  .b-about__image {
+    margin: 0 auto;
+    display: block;
+    min-height: 350px;
+    padding: 6px; }
+  /* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+  .b-header--bgc {
+    height: 810px; } }
 
 @media screen and (max-width: 39.9375em) {
   /* ------------------------------------
@@ -6382,4 +6451,33 @@ dt {
     .b-works .grid-item img {
       display: block;
       max-width: 98%;
-      margin: 4px auto; } }
+      margin: 4px auto; }
+  /* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+  .l-about--title {
+    margin-top: 0;
+    margin: 6px; }
+  .l-about--content {
+    padding-top: 40px;
+    padding-bottom: 80px; }
+  .b-about__title {
+    font-size: 38px;
+    text-align: center;
+    margin-top: 14px; }
+  .b-about__content {
+    font-size: 14px;
+    margin-top: 20px; }
+  .b-about__link {
+    font-size: 13px;
+    margin-top: 6px; }
+  .b-about__image {
+    margin: 0 auto;
+    display: block;
+    min-height: 350px;
+    padding: 6px; }
+  /* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+  .b-header--bgc {
+    height: 610px; } }

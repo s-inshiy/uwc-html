@@ -109,6 +109,16 @@
 		}
 	}
 
+	/* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+
+	.l-about {
+		&--title {
+			margin-top: 20px;
+		}
+	}
+
 }
 
 //xLarge to xxLarge styles
@@ -237,6 +247,27 @@
 			display: block;
 			max-width: 98%;
 			margin: 4px;
+		}
+	}
+
+	/* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+
+	.l-about {
+		&--title {
+			margin-top: 0;
+			margin-left: 	30px;
+		}
+	}
+
+	/* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+
+	.b-header {
+		&--bgc {
+			height: 810px	;
 		}
 	}
 
@@ -408,7 +439,45 @@
 			margin: 4px;
 		}
 
+	}
+
+	/* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+
+	.l-about {
+		&--title {
+			margin-top: 0;
+			margin-left: 	30px;
+		}
+	}
+
+	.b-about {
+		&__title {
+			font-size: 38px;	
+		}
+		&__content {
+			font-size: 14px;
+			margin-top: 20px;
+		}
+		&__link {
+			font-size: 13px;
+			margin-top: 6px;
+		}
+		&__image {
+			min-height: 340px;
+		}
 	}	
+
+	/* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+
+	.b-header {
+		&--bgc {
+			height: 810px	;
+		}
+	}
 	
 }
 
@@ -610,6 +679,53 @@
 				margin: 4px auto;
 			}
 		} 
+	}
+
+	/* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+
+	.l-about {
+		&--title {
+			margin-top: 0;
+			margin: 6px;
+		}
+		&--content {
+			padding-top: 40px;
+			padding-bottom: 80px;
+		}
+	}
+
+	.b-about {
+		&__title {
+			font-size: 38px;
+			text-align: center;
+    	margin-top: 14px;	
+		}
+		&__content {
+			font-size: 14px;
+			margin-top: 20px;
+		}
+		&__link {
+			font-size: 13px;
+			margin-top: 6px;
+		}
+		&__image {
+			margin: 0 auto;
+			display: block;
+			min-height: 350px;
+			padding: 6px;
+		}
+	}	
+
+		/* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+
+	.b-header {
+		&--bgc {
+			height: 810px	;
+		}
 	}
 
 }
@@ -841,6 +957,53 @@
 				margin: 4px auto;
 			}
 		} 
+	}
+
+	/* ------------------------------------
+	    Section About Styles
+	-------------------------------------*/
+
+	.l-about {
+		&--title {
+			margin-top: 0;
+			margin: 6px;
+		}
+		&--content {
+			padding-top: 40px;
+			padding-bottom: 80px;
+		}
+	}
+
+	.b-about {
+		&__title {
+			font-size: 38px;
+			text-align: center;
+    	margin-top: 14px;	
+		}
+		&__content {
+			font-size: 14px;
+			margin-top: 20px;
+		}
+		&__link {
+			font-size: 13px;
+			margin-top: 6px;
+		}
+		&__image {
+			margin: 0 auto;
+			display: block;
+			min-height: 350px;
+			padding: 6px;
+		}
+	}	
+
+	/* ------------------------------------
+	    Header Styles
+	-------------------------------------*/
+
+	.b-header {
+		&--bgc {
+			height: 610px	;
+		}
 	}
 
 }
