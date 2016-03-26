@@ -4927,7 +4927,7 @@ table.hover tr:nth-of-type(even):hover {
     text-align: center;
     margin-top: 12px;
     margin-left: 10px;
-    margin-bottom: 58px; }
+    margin-bottom: 72px; }
   .b-skills__line {
     text-align: left;
     font-family: "BaronNeue", sans-serif;
@@ -4938,7 +4938,7 @@ table.hover tr:nth-of-type(even):hover {
     letter-spacing: 1.8px; }
 
 .l-skills {
-  padding-top: 110px;
+  padding-top: 96px;
   padding-bottom: 74px; }
 
 dl {
@@ -5659,7 +5659,7 @@ dt {
 .b-news {
   background: #fff;
   padding-top: 96px;
-  padding-bottom: 128px;
+  padding-bottom: 122px;
   margin-bottom: 34px;
   transition: height .3s ease; }
   .b-news img {
@@ -5670,7 +5670,7 @@ dt {
     color: #1a2631;
     letter-spacing: 1.8px;
     text-align: center;
-    margin: 28px 0 58px 14px; }
+    margin: 14px 0 72px 14px; }
     .b-news__title--blog {
       font-size: 14px;
       text-align: left;
@@ -5774,7 +5774,7 @@ dt {
 -------------------------------------*/
 .b-contact {
   background-color: #fff;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 132px;
   margin-bottom: 24px; }
   .b-contact__title {
@@ -5784,7 +5784,7 @@ dt {
     letter-spacing: 1.8px;
     text-align: center;
     margin-left: 12px;
-    margin-bottom: 104px; }
+    margin-bottom: 114px; }
   .b-contact form {
     margin-left: 20px; }
     .b-contact form [type=text], .b-contact form [type=email] {
@@ -5985,14 +5985,33 @@ dt {
       font-size: 38px; }
     .b-contact form {
       margin-left: 0; }
+      .b-contact form [type=text], .b-contact form [type=email] {
+        height: 48px;
+        margin-bottom: 22px;
+        padding: 18px 16px 18px 28px;
+        font-size: 12px; }
+      .b-contact form textarea {
+        height: 220px;
+        padding: 24px 16px 24px 28px;
+        margin-bottom: 26px;
+        font-size: 12px; }
+      .b-contact form .button {
+        font-size: 12px; }
   /*------------------------------------
 	    Section News Styles
 	-------------------------------------*/
-  .b-news__title {
-    margin: 28px 0 58px 0px; }
-    .b-news__title--blog {
-      margin: 12px 0 0;
-      font-size: 14px; } }
+  .b-news {
+    padding-top: 40px;
+    padding-bottom: 100px; }
+    .b-news__img img {
+      padding: 0 10px 0 0; }
+    .b-news__title {
+      margin: 28px 0 58px 0px;
+      font-size: 38px .b-news__title --blog;
+        font-size-margin: 12px 0 0;
+        font-size-font-size: 14px; }
+    .b-news__link {
+      margin-top: 0; } }
 
 @media screen and (max-width: 39.9375em) {
   /* ------------------------------------
@@ -6003,7 +6022,8 @@ dt {
   .b-footer__social {
     margin-left: 26px; }
   .b-footer__copyright {
-    margin-left: 26px; }
+    margin-left: 26px;
+    font-size: 14px; }
   /* ------------------------------------
 	    Section Contact Styles
 	-------------------------------------*/
@@ -6017,6 +6037,18 @@ dt {
       font-size: 36px; }
     .b-contact form {
       margin-left: 0; }
+      .b-contact form [type=text], .b-contact form [type=email] {
+        height: 48px;
+        margin-bottom: 22px;
+        padding: 18px 16px 18px 28px;
+        font-size: 12px; }
+      .b-contact form textarea {
+        height: 220px;
+        padding: 24px 16px 24px 28px;
+        margin-bottom: 26px;
+        font-size: 12px; }
+      .b-contact form .button {
+        font-size: 12px; }
   .l-home {
     padding: 10px; }
   /* ------------------------------------
@@ -6043,6 +6075,10 @@ dt {
 	-------------------------------------*/
   .b-news {
     padding: 26px 0; }
+    .b-news__img img {
+      display: block;
+      margin: 0 auto 12px;
+      padding: 0 8px 0 0; }
     .b-news__title {
       margin: 28px 0 28px 0px;
       text-align: center;
