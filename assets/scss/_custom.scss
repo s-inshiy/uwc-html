@@ -3,8 +3,13 @@
 ------------------------------------- */
 
 @font-face {
-    font-family: BaronNeue;
-    src: url("../fonts/Baron Neue Black.otf");
+	font-family: 'BaronNeue';
+	src: url('../fonts/BaronNeueBlack.eot');
+	src: url('../fonts/BaronNeueBlack.eot') format('embedded-opentype'),
+	url('../fonts/BaronNeueBlack.woff2') format('woff2'),
+	url('../fonts/BaronNeueBlack.woff') format('woff'),
+	url('../fonts/BaronNeueBlack.ttf') format('truetype'),
+	url('../fonts/BaronNeueBlack.svg#BaronNeueBlack') format('svg');
 }
 
 $title : #1a2631;
