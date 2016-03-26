@@ -50,6 +50,30 @@
 			} 
 		}
 	} 
+	
+	/* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+	
+	.l-development {
+		padding-top: 50px;
+	}
+
+	.b-development {
+		&--bgc {
+			height: 594px;
+			background-size: 50%;
+		}
+		&__left {
+			position: inherit;
+		}
+		&__right {
+			position: inherit;
+		}
+		&__title {
+			margin-bottom: 54px;
+		}
+	}
 
 }
 
@@ -61,6 +85,7 @@
 	-------------------------------------*/
 
 	.b-quote {
+		margin: 52px 0;
 		&--bgc {
 			background-size: 50%;
 		}
@@ -130,8 +155,33 @@
 				margin-left: 10px;	
 			} 
 		}
-	} 
+	}
+
+	/* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
 	
+	.l-development {
+		padding-top: 50px;
+	}
+
+	.b-development {
+		background-color: transparent;
+		&--bgc {
+			height: 560px;
+			background-size: 50%;
+		}
+		&__left {
+			position: inherit;
+		}
+		&__right {
+			position: inherit;
+		}
+		&__title {
+			margin-bottom: 54px;
+		}
+	}
+
 }
 
 //Large to xLarge Screens
@@ -140,6 +190,7 @@
 	    Section Quote Styles
 	-------------------------------------*/
 	.b-quote {
+		margin: 52px 0;
 		&--bgc {
 			background-size: 50%;
 		}
@@ -193,6 +244,11 @@
 	/* ------------------------------------
 	    Section Description Styles
 	-------------------------------------*/
+	
+	.l-description {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
 
 	.b-description {
 		&__iphone5s{
@@ -213,10 +269,63 @@
 		}
 	} 
 
-	.l-description {
-	    padding-top: 80px;
-	    padding-bottom: 100px;
+	/* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+	
+	.l-development {
+		padding-top: 50px;
 	}
+
+	.b-development {
+		&--bgc {
+			height: 594px;
+			background-size: 50%;
+		}
+		&__left {
+			position: inherit;
+		}
+		&__right {
+			position: inherit;
+		}
+		&__title {
+			margin-bottom: 54px;
+		}
+	}
+
+	/* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+	
+	.l-development {
+		padding-top: 62px;
+	}
+
+	.b-development {
+		background-color: transparent;
+		&--bgc {
+			height: 560px;
+			background-size: 50%;
+		}
+		&__left {
+			position: inherit;
+		}
+		&__right {
+			position: inherit;
+		}
+		&__title {
+			margin-bottom: 30px;
+			font-size: 13px;
+		}
+		&__img {
+			img {
+				padding: 12px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+
 
 }
 
@@ -232,6 +341,7 @@
 	-------------------------------------*/
 	
 	.b-quote {
+		margin: 52px 0;
 		&--bgc {
 			background-size: 50%;
 		}
@@ -311,8 +421,14 @@
 	    Section Description Styles
 	-------------------------------------*/
 
+	.l-description {
+		padding-top: 0px;
+		padding-bottom: 100px;
+	}
+
 	.b-description {
 		&__iphone5s{
+			height: 400px;
 			margin: 38px auto 0;
 			display: block;
 		}
@@ -335,11 +451,50 @@
 		}
 	} 
 
-	.l-description {
-	    padding-top: 70px;
-	    padding-bottom: 100px;
+	/* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+	
+	.l-development {
+		padding-top: 62px;
 	}
 
+	.b-development {
+		background-color: transparent;
+		&--bgc {
+			height: 560px;
+			background-size: 100%;
+		}
+		&__left {
+			position: inherit;
+		}
+		&__right {
+			position: inherit;
+		}
+		&__title {
+			margin-bottom: 30px;
+			font-size: 13px;
+		}
+		&__img {
+			img {
+				padding: 12px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.l-development {
+    padding-top: 620px;
+	}
+
+	/* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+
+	.l-skills{ 
+		margin-top: 540px;
+	}
 
 }
 
@@ -406,7 +561,8 @@
 
 	.b-quote {
 		&--bgc {
-			background-size: 100%;
+			background-size: cover;
+			background-position: center;
 		}
 		&__content {
 			font-size: 14px;
@@ -415,9 +571,9 @@
 				left: 44%;
 			}
 		}
-		height: 320px;
+		height: 420px;
 		#js-slider {
-			margin-top: 360px;
+			margin-top: 480px;
 			.slick-dots {
 				bottom: -20px;
 				margin: 4px 0 0 -10px;
@@ -466,6 +622,7 @@
 
 	.b-description {
 		&__iphone5s{
+			height: 400px;
 			margin: 38px auto 0;
 			display: block;
 		}
@@ -490,8 +647,52 @@
 	} 
 
 	.l-description {
-	    padding-top: 40px;
+	    padding-top: 0px;
 	    padding-bottom: 100px;
 	}
+
+
+	/* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+	
+	.b-development {
+		background-color: transparent;
+		&--bgc {
+			height: 420px;
+			background-size: cover;
+			background-position: center;
+		}
+		&__left {
+			position: inherit;
+		}
+		&__right {
+			position: inherit;
+		}
+		&__title {
+			margin-bottom: 30px;
+			font-size: 13px;
+		}
+		&__img {
+			img {
+				padding: 12px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.l-development {
+   	padding-top: 468px;
+	}
+
+	/* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+
+	.l-skills{ 
+		margin-top: 540px;
+	}
+
 }
 

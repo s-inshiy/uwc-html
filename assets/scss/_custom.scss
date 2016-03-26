@@ -251,11 +251,12 @@ $text : #787878;
 .b-development {
 	background-color: #FFF;	
 	margin-bottom: 36px;
+	transition: all 0.3s ease-in-out;
 	&--bgc {
 		background-image: url("../images/b-development__img.jpg");
 		background-repeat: no-repeat;
 		background-size: 925px 800px;
-		//background-position: center;
+		background-position: center left;
 		height: 800px;
 	}
 	&__title {
@@ -476,7 +477,7 @@ dt {
 	padding-top: 96px;
 	padding-bottom: 122px;
 	margin-bottom: 34px;
-	transition: height .3s ease; 
+	transition: all .3s ease-in-out; 
 	img {
 		margin-bottom: 16px;
 	}
@@ -554,7 +555,7 @@ dt {
 .b-quote {
 	height: 800px;
 	//margin-top: 34px;
-	transition: height .3s ease-in-out;
+	transition: all .3s ease-in-out;
 	margin-bottom: 34px;
 	&--bgc {
 		background-image: url(../images/b-quote__img0.jpg);

@@ -4882,11 +4882,13 @@ table.hover tr:nth-of-type(even):hover {
 ------------------------------------- */
 .b-development {
   background-color: #FFF;
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  transition: all 0.3s ease-in-out; }
   .b-development--bgc {
     background-image: url("../images/b-development__img.jpg");
     background-repeat: no-repeat;
     background-size: 925px 800px;
+    background-position: center left;
     height: 800px; }
   .b-development__title {
     font-family: "BaronNeue", sans-serif;
@@ -5661,7 +5663,7 @@ dt {
   padding-top: 96px;
   padding-bottom: 122px;
   margin-bottom: 34px;
-  transition: height .3s ease; }
+  transition: all .3s ease-in-out; }
   .b-news img {
     margin-bottom: 16px; }
   .b-news__title {
@@ -5720,7 +5722,7 @@ dt {
 -------------------------------------*/
 .b-quote {
   height: 800px;
-  transition: height .3s ease-in-out;
+  transition: all .3s ease-in-out;
   margin-bottom: 34px; }
   .b-quote--bgc {
     background-image: url(../images/b-quote__img0.jpg);
@@ -5879,13 +5881,28 @@ dt {
 	    Section Description Styles
 	-------------------------------------*/
   .b-description__content--right {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  /* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+  .l-development {
+    padding-top: 50px; }
+  .b-development--bgc {
+    height: 594px;
+    background-size: 50%; }
+  .b-development__left {
+    position: inherit; }
+  .b-development__right {
+    position: inherit; }
+  .b-development__title {
+    margin-bottom: 54px; } }
 
 @media screen and (min-width: 75em) and (max-width: 89.9375em) {
   /* ------------------------------------
 	    Section Quote Styles
 	-------------------------------------*/
   .b-quote {
+    margin: 52px 0;
     height: 500px; }
     .b-quote--bgc {
       background-size: 50%; }
@@ -5929,13 +5946,30 @@ dt {
     .b-description__icon--right {
       margin-left: 0; }
   .b-description__content--right {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  /* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+  .l-development {
+    padding-top: 50px; }
+  .b-development {
+    background-color: transparent; }
+    .b-development--bgc {
+      height: 560px;
+      background-size: 50%; }
+    .b-development__left {
+      position: inherit; }
+    .b-development__right {
+      position: inherit; }
+    .b-development__title {
+      margin-bottom: 54px; } }
 
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
   /* ------------------------------------
 	    Section Quote Styles
 	-------------------------------------*/
   .b-quote {
+    margin: 52px 0;
     height: 450px; }
     .b-quote--bgc {
       background-size: 50%; }
@@ -5973,6 +6007,9 @@ dt {
   /* ------------------------------------
 	    Section Description Styles
 	-------------------------------------*/
+  .l-description {
+    padding-top: 80px;
+    padding-bottom: 100px; }
   .b-description__iphone5s {
     margin-left: 0;
     margin-top: 38px; }
@@ -5984,9 +6021,41 @@ dt {
     margin-left: 0; }
     .b-description__content--right {
       margin-left: 0; }
-  .l-description {
-    padding-top: 80px;
-    padding-bottom: 100px; } }
+  /* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+  .l-development {
+    padding-top: 50px; }
+  .b-development--bgc {
+    height: 594px;
+    background-size: 50%; }
+  .b-development__left {
+    position: inherit; }
+  .b-development__right {
+    position: inherit; }
+  .b-development__title {
+    margin-bottom: 54px; }
+  /* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+  .l-development {
+    padding-top: 62px; }
+  .b-development {
+    background-color: transparent; }
+    .b-development--bgc {
+      height: 560px;
+      background-size: 50%; }
+    .b-development__left {
+      position: inherit; }
+    .b-development__right {
+      position: inherit; }
+    .b-development__title {
+      margin-bottom: 30px;
+      font-size: 13px; }
+    .b-development__img img {
+      padding: 12px;
+      display: block;
+      margin: 0 auto; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .l-home {
@@ -5995,6 +6064,7 @@ dt {
 	    Section Quote Styles
 	-------------------------------------*/
   .b-quote {
+    margin: 52px 0;
     height: 350px; }
     .b-quote--bgc {
       background-size: 50%; }
@@ -6050,7 +6120,11 @@ dt {
   /* ------------------------------------
 	    Section Description Styles
 	-------------------------------------*/
+  .l-description {
+    padding-top: 0px;
+    padding-bottom: 100px; }
   .b-description__iphone5s {
+    height: 400px;
     margin: 38px auto 0;
     display: block; }
   .b-description__icon {
@@ -6065,9 +6139,34 @@ dt {
       margin-left: 0; }
   .b-description__title {
     margin-left: 0; }
-  .l-description {
-    padding-top: 70px;
-    padding-bottom: 100px; } }
+  /* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+  .l-development {
+    padding-top: 62px; }
+  .b-development {
+    background-color: transparent; }
+    .b-development--bgc {
+      height: 560px;
+      background-size: 100%; }
+    .b-development__left {
+      position: inherit; }
+    .b-development__right {
+      position: inherit; }
+    .b-development__title {
+      margin-bottom: 30px;
+      font-size: 13px; }
+    .b-development__img img {
+      padding: 12px;
+      display: block;
+      margin: 0 auto; }
+  .l-development {
+    padding-top: 620px; }
+  /* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+  .l-skills {
+    margin-top: 540px; } }
 
 @media screen and (max-width: 39.9375em) {
   /* ------------------------------------
@@ -6111,16 +6210,17 @@ dt {
 	    Section Quote Styles
 	-------------------------------------*/
   .b-quote {
-    height: 320px; }
+    height: 420px; }
     .b-quote--bgc {
-      background-size: 100%; }
+      background-size: cover;
+      background-position: center; }
     .b-quote__content {
       font-size: 14px;
       padding-top: 40px; }
       .b-quote__content:before {
         left: 44%; }
     .b-quote #js-slider {
-      margin-top: 360px; }
+      margin-top: 480px; }
       .b-quote #js-slider .slick-dots {
         bottom: -20px;
         margin: 4px 0 0 -10px; }
@@ -6149,6 +6249,7 @@ dt {
 	    Section Description Styles
 	-------------------------------------*/
   .b-description__iphone5s {
+    height: 400px;
     margin: 38px auto 0;
     display: block; }
   .b-description__title {
@@ -6165,5 +6266,32 @@ dt {
     .b-description__content--right {
       margin-left: 0; }
   .l-description {
-    padding-top: 40px;
-    padding-bottom: 100px; } }
+    padding-top: 0px;
+    padding-bottom: 100px; }
+  /* ------------------------------------
+	    Section Devolpment Styles
+	-------------------------------------*/
+  .b-development {
+    background-color: transparent; }
+    .b-development--bgc {
+      height: 420px;
+      background-size: cover;
+      background-position: center; }
+    .b-development__left {
+      position: inherit; }
+    .b-development__right {
+      position: inherit; }
+    .b-development__title {
+      margin-bottom: 30px;
+      font-size: 13px; }
+    .b-development__img img {
+      padding: 12px;
+      display: block;
+      margin: 0 auto; }
+  .l-development {
+    padding-top: 468px; }
+  /* ------------------------------------
+	    Section Skills Styles
+	-------------------------------------*/
+  .l-skills {
+    margin-top: 540px; } }
