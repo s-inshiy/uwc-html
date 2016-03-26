@@ -1,20 +1,315 @@
-@media (min-width: 768px) {
+//xxLarge to xxxLarge styles 
+@media screen and (min-width: 90em) and (max-width: 105em) {
 
-	.navbar {
-		border: none;
+	/* ------------------------------------
+	    Section Contact Styles
+	-------------------------------------*/
+
+	.b-contact {
+		&__title {
+			margin-left: 0;
+		}
 	}
-	.navbar-collapse {
-		padding: 0;
+	
+	/* ------------------------------------
+	    Section Quote Styles
+	-------------------------------------*/
+
+	.b-quote {
+		&--bgc {
+			background-size: 50%;
+		}
+		height: 650px;
+		#js-slider {
+	    margin-top: 160px;
+		}
 	}
-	.navbar-nav {
-		float: right;
-	}
-	.navbar-default {
-		background-image: none;
-		box-shadow: none;
-	}
-	.l-headerInfo {
-			padding: 0;
+
+	/* ------------------------------------
+	    Section News Styles
+	-------------------------------------*/ 
+
+	.b-news {
+		padding-top: 48px;
+		&__title{
+			margin: 28px 0 48px 0px;
+			&--blog {
+				margin: 12px 0 0;
+			}
+		}
 	}
 
 }
+
+//xLarge to xxLarge styles
+@media screen and (min-width: 75em) and (max-width: 89.9375em) {
+
+	/* ------------------------------------
+	    Section Quote Styles
+	-------------------------------------*/
+
+	.b-quote {
+		&--bgc {
+			background-size: 50%;
+		}
+		&__content {
+			font-size: 18px;
+			padding-top: 84px;
+		}
+		height: 500px;
+		#js-slider {
+			margin-top: 90px;
+			.slick-dots {
+				bottom: -65px;
+				li {
+					margin: 0 14px;
+				}
+			}
+		}
+	}
+	
+	/* ------------------------------------
+	    Section Contact Styles
+	-------------------------------------*/
+
+	.b-contact {
+		padding-top: 100px;
+		padding-bottom: 80px;
+		&__title {
+			margin-bottom: 74px;
+			margin-left: 0;
+		}
+	}
+
+	/*------------------------------------
+	    Section News Styles
+	-------------------------------------*/ 
+
+	.b-news {
+		padding-top: 48px;
+		&__title{
+			margin: 28px 0 48px 0px;
+			font-size: 42px;
+			&--blog {
+				margin: 12px 0 0;
+				font-size: 14px;
+			}
+		}
+	}
+	
+}
+
+//Large to xLarge Screens
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	/* ------------------------------------
+	    Section Quote Styles
+	-------------------------------------*/
+	.b-quote {
+		&--bgc {
+			background-size: 50%;
+		}
+		&__content {
+			font-size: 18px;
+			padding-top: 60px;
+		}
+		height: 450px;
+		#js-slider {
+			margin-top: 80px;
+			.slick-dots {
+				bottom: -55px;
+				li {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+
+	/* ------------------------------------
+	    Section Contact Styles
+	-------------------------------------*/
+	.b-contact {
+		padding-top: 80px;
+		padding-bottom: 60px;
+		&__title {
+			margin-bottom: 54px;
+			margin-left: 0;
+			font-size: 42px;
+		}
+		form {
+			margin-left: 0;
+		}
+	}
+	
+	/*------------------------------------
+	    Section News Styles
+	-------------------------------------*/ 
+
+	.b-news {
+		padding-top: 48px;
+		&__title{
+			margin: 28px 0 48px 0px;
+			&--blog {
+				margin: 12px 0 0;
+				font-size: 14px;
+			}
+		}
+	}
+
+
+}
+
+//Medium to Large Screens
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	
+	.l-home {
+		padding: 20px;
+	}
+
+	/* ------------------------------------
+	    Section Quote Styles
+	-------------------------------------*/
+	
+	.b-quote {
+		&--bgc {
+			background-size: 50%;
+		}
+		&__content {
+			font-size: 14px;
+			padding-top: 60px;
+		}
+		height: 350px;
+		#js-slider {
+			margin-top: 50px;
+			.slick-dots {
+				bottom: -34px;
+				li {
+					margin: 0 8px;
+				}
+			}
+		}
+	}
+
+	/* ------------------------------------
+	    Section Contact Styles
+	-------------------------------------*/
+	.b-contact {
+		padding-top: 80px;
+		padding-bottom: 60px;
+		&__title {
+			margin-bottom: 54px;
+			margin-left: 0;
+			font-size: 38px;
+		}
+		form {
+			margin-left: 0;
+		}
+	}
+
+	/*------------------------------------
+	    Section News Styles
+	-------------------------------------*/ 
+
+	.b-news {
+		&__title{
+			margin: 28px 0 58px 0px;
+			&--blog {
+				margin: 12px 0 0;
+				font-size: 14px;
+			}
+		}
+	}
+
+}
+
+//Only Small Screens
+@media screen and (max-width: 39.9375em) {
+
+	/* ------------------------------------
+     Footer Styles
+	-------------------------------------*/
+
+	.b-footer {
+		&__imgUp{
+			margin-right: 26px;
+		}
+		&__social {
+			margin-left: 26px;
+		}
+		&__copyright {
+			margin-left: 26px;
+		}
+	}
+
+	/* ------------------------------------
+	    Section Contact Styles
+	-------------------------------------*/
+
+	.b-contact {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		margin-top: 286px;
+		&__title {
+			margin-bottom: 34px;
+			margin-left: 0;
+			font-size: 36px;
+		}
+		form {
+			margin-left: 0;
+		}
+	}
+
+	.l-home {
+		padding: 10px;
+	}
+
+	/* ------------------------------------
+	    Section Quote Styles
+	-------------------------------------*/
+
+	.b-quote {
+		&--bgc {
+			background-size: 100%;
+		}
+		&__content {
+			font-size: 14px;
+			padding-top: 40px;
+			&:before {
+				left: 44%;
+			}
+		}
+		height: 320px;
+		#js-slider {
+			margin-top: 360px;
+			.slick-dots {
+				bottom: -20px;
+				margin: 4px 0 0 -10px;
+				li {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+
+		/*------------------------------------
+	    Section News Styles
+	-------------------------------------*/ 
+
+	.b-news {
+		padding: 26px 0;
+		&__title{
+			margin: 28px 0 28px 0px;
+			text-align: center;
+			font-size: 36px;
+			&--blog {
+				margin: 12px 0 4px;
+				font-size: 14px;
+			}
+		}
+		&__link {
+			margin-bottom: 34px;
+			margin-top: 0;
+		}
+	}
+
+}
+
